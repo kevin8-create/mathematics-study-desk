@@ -1,0 +1,1981 @@
+{
+  "topics": [
+    {
+      "id": "026-functions",
+      "course": "026",
+      "zh": "函数与反函数",
+      "en": "Functions and inverses",
+      "summaryZh": "检查定义域，再处理复合、反函数与反三角函数的主值。",
+      "summaryEn": "Check the domain first, then handle composition, inverses, and inverse trig principal values.",
+      "terms": [
+        {
+          "zh": "定义域",
+          "en": "domain"
+        },
+        {
+          "zh": "值域",
+          "en": "range"
+        },
+        {
+          "zh": "复合函数",
+          "en": "composite function"
+        },
+        {
+          "zh": "主值",
+          "en": "principal value"
+        }
+      ]
+    },
+    {
+      "id": "026-limits",
+      "course": "026",
+      "zh": "极限",
+      "en": "Limits",
+      "summaryZh": "区分单侧极限、无穷远极限和无穷极限。优先尝试因式分解、有理化、夹逼或基本极限。",
+      "summaryEn": "Distinguish one-sided limits, limits at infinity, and infinite limits. Try factoring, rationalization, squeezing, or a standard limit.",
+      "terms": [
+        {
+          "zh": "单侧极限",
+          "en": "one-sided limit"
+        },
+        {
+          "zh": "夹逼定理",
+          "en": "squeeze theorem"
+        },
+        {
+          "zh": "渐近线",
+          "en": "asymptote"
+        },
+        {
+          "zh": "未定式",
+          "en": "indeterminate form"
+        }
+      ]
+    },
+    {
+      "id": "026-continuity",
+      "course": "026",
+      "zh": "连续性",
+      "en": "Continuity",
+      "summaryZh": "在指定点比较两侧极限和函数值。使用介值定理时注明闭区间连续性。",
+      "summaryEn": "Compare both one-sided limits with the function value. State continuity on the closed interval when applying the intermediate value theorem.",
+      "terms": [
+        {
+          "zh": "连续",
+          "en": "continuous"
+        },
+        {
+          "zh": "可去间断点",
+          "en": "removable discontinuity"
+        },
+        {
+          "zh": "介值定理",
+          "en": "intermediate value theorem"
+        }
+      ]
+    },
+    {
+      "id": "026-derivative",
+      "course": "026",
+      "zh": "导数与求导法则",
+      "en": "Derivatives and differentiation rules",
+      "summaryZh": "掌握差商、乘积、商、链式法则及隐函数、对数和反三角函数求导。",
+      "summaryEn": "Use difference quotients, product, quotient, and chain rules, including implicit, logarithmic, and inverse trigonometric differentiation.",
+      "terms": [
+        {
+          "zh": "差商",
+          "en": "difference quotient"
+        },
+        {
+          "zh": "切线",
+          "en": "tangent line"
+        },
+        {
+          "zh": "链式法则",
+          "en": "chain rule"
+        },
+        {
+          "zh": "隐函数求导",
+          "en": "implicit differentiation"
+        }
+      ]
+    },
+    {
+      "id": "026-rates",
+      "course": "026",
+      "zh": "相关变化率",
+      "en": "Related rates",
+      "summaryZh": "先建立变量关系，对时间求导，最后代入该时刻的数值。",
+      "summaryEn": "Relate the variables, differentiate with respect to time, and then substitute the instantaneous values.",
+      "terms": [
+        {
+          "zh": "相关变化率",
+          "en": "related rates"
+        },
+        {
+          "zh": "瞬时速度",
+          "en": "instantaneous velocity"
+        },
+        {
+          "zh": "恒等式",
+          "en": "identity"
+        }
+      ]
+    },
+    {
+      "id": "026-applications",
+      "course": "026",
+      "zh": "导数应用",
+      "en": "Applications of derivatives",
+      "summaryZh": "用端点和临界点判定最值，用导数符号判定单调性与凹凸性，核对中值定理和洛必达法则的条件。",
+      "summaryEn": "Check endpoints and critical points for extrema, use derivative signs for monotonicity and concavity, and verify hypotheses before using the mean value theorem or L’Hôpital’s rule.",
+      "terms": [
+        {
+          "zh": "临界点",
+          "en": "critical point"
+        },
+        {
+          "zh": "拐点",
+          "en": "inflection point"
+        },
+        {
+          "zh": "极值",
+          "en": "extremum"
+        },
+        {
+          "zh": "中值定理",
+          "en": "mean value theorem"
+        }
+      ]
+    },
+    {
+      "id": "026-integral",
+      "course": "026",
+      "zh": "定积分与微积分基本定理",
+      "en": "Definite integrals and the FTC",
+      "summaryZh": "区别带符号积分与几何面积。变上限积分求导时同时注意积分上限的内层导数。",
+      "summaryEn": "Distinguish signed integrals from geometric area. For a variable upper limit, account for its derivative.",
+      "terms": [
+        {
+          "zh": "黎曼和",
+          "en": "Riemann sum"
+        },
+        {
+          "zh": "定积分",
+          "en": "definite integral"
+        },
+        {
+          "zh": "微积分基本定理",
+          "en": "fundamental theorem of calculus"
+        }
+      ]
+    },
+    {
+      "id": "026-techniques",
+      "course": "026",
+      "zh": "换元与分部积分",
+      "en": "Substitution and integration by parts",
+      "summaryZh": "识别复合结构或乘积结构，选择换元或分部积分。换元时同步处理积分限。",
+      "summaryEn": "Recognize composite or product structure and choose substitution or integration by parts. Transform bounds with the variable.",
+      "terms": [
+        {
+          "zh": "原函数",
+          "en": "antiderivative"
+        },
+        {
+          "zh": "换元积分法",
+          "en": "substitution"
+        },
+        {
+          "zh": "分部积分法",
+          "en": "integration by parts"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "026-001",
+      "topic": "026-functions",
+      "course": "026",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "求函数 $f(x)=\\ln(5-2x)$ 的定义域。",
+        "en": "Find the domain of $f(x)=\\ln(5-2x)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "实对数的真数必须为正。解 $5-2x>0$ 得 $x<\\frac52$。",
+              "en": "The real logarithm requires a positive argument. Solving $5-2x>0$ gives $x<\\frac52$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$x> \\frac52$",
+          "en": "$x> \\frac52$"
+        },
+        {
+          "id": "b",
+          "zh": "$x<\\frac52$",
+          "en": "$x<\\frac52$"
+        },
+        {
+          "id": "c",
+          "zh": "$x\\le\\frac52$",
+          "en": "$x\\le\\frac52$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\mathbb R$",
+          "en": "$\\mathbb R$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-028",
+        "026-002"
+      ]
+    },
+    {
+      "id": "026-002",
+      "topic": "026-functions",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\arcsin(\\sin(\\frac{5\\pi}{6}))$。",
+        "en": "Evaluate $\\arcsin(\\sin(\\frac{5\\pi}{6}))$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "原正弦值是 $\\frac12$。$\\arcsin$ 的值域是 $[-\\frac{\\pi}{2},\\frac{\\pi}{2}]$，该区间里正弦为 $\\frac12$ 的角只有 $\\frac{\\pi}{6}$。",
+              "en": "The inner sine equals $\\frac12$. In the principal range $[-\\frac{\\pi}{2},\\frac{\\pi}{2}]$, the only angle with sine $\\frac12$ is $\\frac{\\pi}{6}$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac{5\\pi}{6}$",
+          "en": "$\\frac{5\\pi}{6}$"
+        },
+        {
+          "id": "b",
+          "zh": "$-\\frac{\\pi}{6}$",
+          "en": "$-\\frac{\\pi}{6}$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\frac{\\pi}{6}$",
+          "en": "$\\frac{\\pi}{6}$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\frac{\\pi}{3}$",
+          "en": "$\\frac{\\pi}{3}$"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-028",
+        "026-003"
+      ]
+    },
+    {
+      "id": "026-003",
+      "topic": "026-functions",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "若 $f(x)=\\sqrt{x+4}$，$g(x)=3-x^2$，求 $(f\\circ g)$ 的定义域。",
+        "en": "If $f(x)=\\sqrt{x+4}$ and $g(x)=3-x^2$, find the domain of $(f\\circ g)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "先复合得到 $\\sqrt{7-x^2}$，要求 $x^2\\le7$，等号处平方根仍有定义。",
+              "en": "Composition gives $\\sqrt{7-x^2}$. Require $x^2\\le7$ and include equality because the square root is defined at zero."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$[-\\sqrt 7,\\sqrt 7]$",
+          "en": "$[-\\sqrt 7,\\sqrt 7]$"
+        },
+        {
+          "id": "b",
+          "zh": "$[-\\sqrt 3,\\sqrt 3]$",
+          "en": "$[-\\sqrt 3,\\sqrt 3]$"
+        },
+        {
+          "id": "c",
+          "zh": "$[0,7]$",
+          "en": "$[0,7]$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\mathbb R$",
+          "en": "$\\mathbb R$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-028",
+        "026-002"
+      ]
+    },
+    {
+      "id": "026-004",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to4}\\frac{x^2-16}{x-4}$。",
+        "en": "Find $\\displaystyle\\lim_{x\\to4}\\frac{x^2-16}{x-4}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "当 $x\\ne4$ 时，分解并约去因子 $x-4$ 得 $x+4$，故极限为 $8$。",
+              "en": "For $x\\ne4$, factor and cancel $x-4$ to get $x+4$, whose limit is $8$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "原差商是 $h(x)=x^2$ 在 $4$ 处的导数定义，因此值为 $2\\cdot4=8$。",
+              "en": "The quotient is the derivative definition for $h(x)=x^2$ at $4$, so it equals $2\\cdot4=8$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$0$",
+          "en": "$0$"
+        },
+        {
+          "id": "b",
+          "zh": "$4$",
+          "en": "$4$"
+        },
+        {
+          "id": "c",
+          "zh": "$16$",
+          "en": "$16$"
+        },
+        {
+          "id": "d",
+          "zh": "$8$",
+          "en": "$8$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-029",
+        "026-035"
+      ]
+    },
+    {
+      "id": "026-005",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to0}\\frac{\\sin(5x)}{\\tan(2x)}$。",
+        "en": "Find $\\displaystyle\\lim_{x\\to0}\\frac{\\sin(5x)}{\\tan(2x)}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "把商写成 $\\frac52\\frac{\\sin(5x)}{5x}\\frac{2x}{\\sin(2x)}\\cos(2x)$，三个随 $x$ 变化的因子都趋于 $1$。",
+              "en": "Rewrite as $\\frac52\\frac{\\sin(5x)}{5x}\\frac{2x}{\\sin(2x)}\\cos(2x)$. Each variable factor tends to $1$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "分子分母同趋于 $0$，且 $(\\tan(2x))^{\\prime}$ 在附近不为零。洛必达法则给出 $\\lim_{x\\to0}\\frac{5\\cos(5x)}{2\\sec^2(2x)}=\\frac52$。",
+              "en": "Both terms tend to zero and $(\\tan(2x))^{\\prime}$ is nonzero nearby. L’Hôpital’s rule gives $\\lim_{x\\to0}\\frac{5\\cos(5x)}{2\\sec^2(2x)}=\\frac52$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac25$",
+          "en": "$\\frac25$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac52$",
+          "en": "$\\frac52$"
+        },
+        {
+          "id": "c",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "d",
+          "zh": "$0$",
+          "en": "$0$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-035",
+        "026-025"
+      ]
+    },
+    {
+      "id": "026-006",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to-\\infty}\\left(\\sqrt{x^2-6x}+x\\right)$。",
+        "en": "Find $\\displaystyle\\lim_{x\\to-\\infty}\\left(\\sqrt{x^2-6x}+x\\right)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "有理化得 $\\frac{-6x}{\\sqrt{x^2-6x}-x}$。当 $x<0$，以 $-x$ 除分子分母，得到 $\\frac{6}{\\sqrt{1-\\frac6x}+1}\\to3$。",
+              "en": "Rationalization gives $\\frac{-6x}{\\sqrt{x^2-6x}-x}$. For $x<0$, divide by $-x$ to get $\\frac{6}{\\sqrt{1-\\frac6x}+1}\\to3$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$-3$",
+          "en": "$-3$"
+        },
+        {
+          "id": "b",
+          "zh": "$0$",
+          "en": "$0$"
+        },
+        {
+          "id": "c",
+          "zh": "$3$",
+          "en": "$3$"
+        },
+        {
+          "id": "d",
+          "zh": "$+\\infty$",
+          "en": "$+\\infty$"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-025",
+        "026-035"
+      ]
+    },
+    {
+      "id": "026-007",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to0}(1+3x)^{\\frac{2}{x}}$。",
+        "en": "Evaluate $\\displaystyle\\lim_{x\\to0}(1+3x)^{\\frac{2}{x}}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "在零附近底数为正。设 $u=3x$，则原式为 $((1+u)^{\\frac{1}{u}})^6$，利用基本极限得 $e^6$。",
+              "en": "The base is positive near zero. With $u=3x$, the expression is $((1+u)^{\\frac{1}{u}})^6$, which tends to $e^6$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$e^3$",
+          "en": "$e^3$"
+        },
+        {
+          "id": "b",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "c",
+          "zh": "$e^2$",
+          "en": "$e^2$"
+        },
+        {
+          "id": "d",
+          "zh": "$e^6$",
+          "en": "$e^6$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-035",
+        "026-025"
+      ]
+    },
+    {
+      "id": "026-008",
+      "topic": "026-continuity",
+      "course": "026",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "设 $f(x)=x^2-1$（$x<2$），$f(x)=ax+1$（$x\\ge2$）。何值使 $f$ 在 $2$ 连续？",
+        "en": "Let $f(x)=x^2-1$ for $x<2$ and $f(x)=ax+1$ for $x\\ge2$. Which value makes $f$ continuous at $2$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "左极限为 $3$，右极限及函数值均为 $2a+1$。解 $2a+1=3$ 得 $a=1$。",
+              "en": "The left limit is $3$. The right limit and function value are $2a+1$. Solving $2a+1=3$ gives $a=1$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "b",
+          "zh": "$2$",
+          "en": "$2$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\frac32$",
+          "en": "$\\frac32$"
+        },
+        {
+          "id": "d",
+          "zh": "$-1$",
+          "en": "$-1$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-034",
+        "026-021"
+      ]
+    },
+    {
+      "id": "026-009",
+      "topic": "026-continuity",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "$f$ 在 $[0,2]$ 连续且 $f(0)=-1,f(2)=4$。以下哪项必然成立？",
+        "en": "$f$ is continuous on $[0,2]$ with $f(0)=-1,f(2)=4$. Which statement must hold?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "零介于两个端点函数值之间；由介值定理存在 $c\\in(0,2)$ 使 $f(c)=0$。",
+              "en": "Zero lies between the two endpoint values. The intermediate value theorem gives a $c\\in(0,2)$ such that $f(c)=0$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$f$ 必单调 ",
+          "en": " $f$ is monotone"
+        },
+        {
+          "id": "b",
+          "zh": "$f$ 恰有一个零点 ",
+          "en": " $f$ has exactly one zero"
+        },
+        {
+          "id": "c",
+          "zh": "$f$ 在开区间有零点 ",
+          "en": " $f$ has a zero in the open interval"
+        },
+        {
+          "id": "d",
+          "zh": "$f$ 处处可导 ",
+          "en": " $f$ is differentiable everywhere"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-021",
+        "026-034"
+      ]
+    },
+    {
+      "id": "026-010",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "若 $f(x)=\\cos(3x^2)$，求 $f^{\\prime}(x)$。",
+        "en": "If $f(x)=\\cos(3x^2)$, find $f^{\\prime}(x)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "外层余弦求导得到 $-\\sin(3x^2)$，再乘内层导数 $6x$。",
+              "en": "Differentiating the outer cosine gives $-\\sin(3x^2)$. Multiply by the inner derivative $6x$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$6x\\sin(3x^2)$",
+          "en": "$6x\\sin(3x^2)$"
+        },
+        {
+          "id": "b",
+          "zh": "$-6x\\sin(3x^2)$",
+          "en": "$-6x\\sin(3x^2)$"
+        },
+        {
+          "id": "c",
+          "zh": "$-\\sin(3x^2)$",
+          "en": "$-\\sin(3x^2)$"
+        },
+        {
+          "id": "d",
+          "zh": "$-3x^2\\sin(3x^2)$",
+          "en": "$-3x^2\\sin(3x^2)$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-024",
+        "026-011"
+      ]
+    },
+    {
+      "id": "026-011",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "曲线 $x^2+xy+y^2=7$ 在 $(1,2)$ 处的切线斜率是多少？",
+        "en": "What is the tangent slope to $x^2+xy+y^2=7$ at $(1,2)$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "隐式求导得 $2x+y+(x+2y)y^{\\prime}=0$。在 $(1,2)$ 有 $x+2y=5\\ne0$，故斜率为 $-\\frac45$。",
+              "en": "Implicit differentiation yields $2x+y+(x+2y)y^{\\prime}=0$. At $(1,2)$, the coefficient $x+2y=5\\ne0$, and the slope is $-\\frac45$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$-\\frac54$",
+          "en": "$-\\frac54$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac45$",
+          "en": "$\\frac45$"
+        },
+        {
+          "id": "c",
+          "zh": "$-\\frac25$",
+          "en": "$-\\frac25$"
+        },
+        {
+          "id": "d",
+          "zh": "$-\\frac45$",
+          "en": "$-\\frac45$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-024",
+        "026-012"
+      ]
+    },
+    {
+      "id": "026-012",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "若 $f(x)=x^x$（$x>0$），求 $f^{\\prime}(2)$。",
+        "en": "For $f(x)=x^x$ with $x>0$, find $f^{\\prime}(2)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "由 $\\ln f=x\\ln x$ 得 $\\frac{f^{\\prime}}{f}=\\ln x+1$，所以 $f^{\\prime}(2)=4(1+\\ln 2)$。",
+              "en": "From $\\ln f=x\\ln x$ we get $\\frac{f^{\\prime}}{f}=\\ln x+1$, hence $f^{\\prime}(2)=4(1+\\ln 2)$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "写成 $e^{x\\ln x}$，再对指数应用乘积法则及链式法则。",
+              "en": "Write the function as $e^{x\\ln x}$, then apply the product rule to the exponent and the chain rule."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$4(1+\\ln 2)$",
+          "en": "$4(1+\\ln 2)$"
+        },
+        {
+          "id": "b",
+          "zh": "$4\\ln 2$",
+          "en": "$4\\ln 2$"
+        },
+        {
+          "id": "c",
+          "zh": "$4$",
+          "en": "$4$"
+        },
+        {
+          "id": "d",
+          "zh": "$2(1+\\ln 2)$",
+          "en": "$2(1+\\ln 2)$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-024",
+        "026-011"
+      ]
+    },
+    {
+      "id": "026-013",
+      "topic": "026-rates",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "一个圆的半径以 $3$ 米每秒增长。半径为 $4$ 米时，面积变化率是多少平方米每秒？",
+        "en": "A circle’s radius grows at $3$ metres per second. How fast is its area growing, in square metres per second, when its radius is $4$ metres?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "从 $A=\\pi r^2$ 得 $\\frac{\\mathrm dA}{\\mathrm dt}=2\\pi r\\frac{\\mathrm dr}{\\mathrm dt}=2\\pi(4)(3)=24\\pi$。",
+              "en": "Differentiate $A=\\pi r^2$ to obtain $\\frac{\\mathrm dA}{\\mathrm dt}=2\\pi r\\frac{\\mathrm dr}{\\mathrm dt}=2\\pi(4)(3)=24\\pi$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$12\\pi$",
+          "en": "$12\\pi$"
+        },
+        {
+          "id": "b",
+          "zh": "$24\\pi$",
+          "en": "$24\\pi$"
+        },
+        {
+          "id": "c",
+          "zh": "$8\\pi$",
+          "en": "$8\\pi$"
+        },
+        {
+          "id": "d",
+          "zh": "$48\\pi$",
+          "en": "$48\\pi$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-026"
+      ]
+    },
+    {
+      "id": "026-014",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $f(x)=x^3-3x$ 在 $[0,3]$ 的绝对最小值。",
+        "en": "Find the absolute minimum value of $f(x)=x^3-3x$ on $[0,3]$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "$f^{\\prime}(x)=3x^2-3$，内部唯一临界点是 $1$。端点和临界点函数值为 $0,-2,18$，故最小值为 $-2$。",
+              "en": "The derivative is $3x^2-3$, so $1$ is the only interior critical point. The three candidate values are $0,-2,18$, yielding $-2$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$-3$",
+          "en": "$-3$"
+        },
+        {
+          "id": "b",
+          "zh": "$0$",
+          "en": "$0$"
+        },
+        {
+          "id": "c",
+          "zh": "$-2$",
+          "en": "$-2$"
+        },
+        {
+          "id": "d",
+          "zh": "$1$",
+          "en": "$1$"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-022",
+        "026-030"
+      ]
+    },
+    {
+      "id": "026-015",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "$f(x)=x^3$ 在 $[0,2]$ 上对应中值定理的 $c$ 是多少？",
+        "en": "Which $c$ satisfies the conclusion of the mean value theorem for $f(x)=x^3$ on $[0,2]$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "多项式在闭区间连续、开区间可导。割线斜率为 $\\frac{8-0}{2-0}=4$，解 $3c^2=4$ 并取 $c\\in(0,2)$。",
+              "en": "The polynomial is continuous on the closed interval and differentiable inside. The secant slope is $\\frac{8-0}{2-0}=4$. Solve $3c^2=4$ and retain $c\\in(0,2)$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac43$",
+          "en": "$\\frac43$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\sqrt 2$",
+          "en": "$\\sqrt 2$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\frac{2}{\\sqrt 3}$",
+          "en": "$\\frac{2}{\\sqrt 3}$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-022",
+        "026-030"
+      ]
+    },
+    {
+      "id": "026-016",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "$f(x)=x^4$ 在 $x=0$ 是否有拐点？",
+        "en": "Does $f(x)=x^4$ have an inflection point at $x=0$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "$f^{\\prime\\prime}(x)=12x^2$，在 $0$ 两侧均为正，因此两侧均向上凹，$0$ 处无拐点。",
+              "en": "Since $f^{\\prime\\prime}(x)=12x^2$ is positive on both sides of zero, the graph is concave up on both sides and has no inflection there."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "有，因为二阶导数为零",
+          "en": "Yes, because its second derivative is zero"
+        },
+        {
+          "id": "b",
+          "zh": "没有，因为凹凸性未改变",
+          "en": "No, because the concavity does not change"
+        },
+        {
+          "id": "c",
+          "zh": "有，因为一阶导数为零",
+          "en": "Yes, because its first derivative is zero"
+        },
+        {
+          "id": "d",
+          "zh": "无法判断凹凸性",
+          "en": "The concavity cannot be determined"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-022",
+        "026-030"
+      ]
+    },
+    {
+      "id": "026-017",
+      "topic": "026-integral",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "设 $F(x)=\\displaystyle\\int_2^{x^2+1}\\cos(t)\\,\\mathrm dt$。求 $F^{\\prime}(x)$。",
+        "en": "Let $F(x)=\\displaystyle\\int_2^{x^2+1}\\cos(t)\\,\\mathrm dt$. Find $F^{\\prime}(x)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "用微积分基本定理先对上限求导，再乘上限对 $x$ 的导数 $2x$。",
+              "en": "Use the fundamental theorem to differentiate with respect to the upper limit, then multiply by the upper limit’s derivative $2x$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "先积成 $F(x)=\\sin(x^2+1)-\\sin2$，再求导。",
+              "en": "First integrate to obtain $F(x)=\\sin(x^2+1)-\\sin2$, then differentiate."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\cos(x^2+1)$",
+          "en": "$\\cos(x^2+1)$"
+        },
+        {
+          "id": "b",
+          "zh": "$-\\sin(x^2+1)$",
+          "en": "$-\\sin(x^2+1)$"
+        },
+        {
+          "id": "c",
+          "zh": "$2x\\cos(x^2+1)$",
+          "en": "$2x\\cos(x^2+1)$"
+        },
+        {
+          "id": "d",
+          "zh": "$2x\\sin(x^2+1)$",
+          "en": "$2x\\sin(x^2+1)$"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-027",
+        "026-018"
+      ]
+    },
+    {
+      "id": "026-018",
+      "topic": "026-integral",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{1}{n}\\left(\\frac{k}{n}\\right)^2$。",
+        "en": "Evaluate $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{1}{n}\\left(\\frac{k}{n}\\right)^2$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "这是 $x^2$ 在 $[0,1]$ 上均匀分割的右端点黎曼和。该函数连续，极限为 $\\int_0^1 x^2\\,\\mathrm dx=\\frac13$。",
+              "en": "This is the right-endpoint Riemann sum for $x^2$ on $[0,1]$. Continuity gives $\\int_0^1 x^2\\,\\mathrm dx=\\frac13$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac13$",
+          "en": "$\\frac13$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac12$",
+          "en": "$\\frac12$"
+        },
+        {
+          "id": "c",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "d",
+          "zh": "$0$",
+          "en": "$0$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-027",
+        "026-017"
+      ]
+    },
+    {
+      "id": "026-019",
+      "topic": "026-techniques",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\int_0^1\\frac{4x}{1+x^2}\\,\\mathrm dx$。",
+        "en": "Evaluate $\\displaystyle\\int_0^1\\frac{4x}{1+x^2}\\,\\mathrm dx$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "设 $u=1+x^2$，$\\mathrm du=2x\\,\\mathrm dx$，上下限变为 $1,2$。因此原积分为 $2\\int_1^2\\frac1u\\,\\mathrm du=2\\ln 2$。",
+              "en": "Use $u=1+x^2$ and $\\mathrm du=2x\\,\\mathrm dx$. The bounds become $1,2$, so the integral is $2\\int_1^2\\frac1u\\,\\mathrm du=2\\ln 2$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\ln 2$",
+          "en": "$\\ln 2$"
+        },
+        {
+          "id": "b",
+          "zh": "$2$",
+          "en": "$2$"
+        },
+        {
+          "id": "c",
+          "zh": "$4\\ln 2$",
+          "en": "$4\\ln 2$"
+        },
+        {
+          "id": "d",
+          "zh": "$2\\ln 2$",
+          "en": "$2\\ln 2$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-023",
+        "026-020"
+      ]
+    },
+    {
+      "id": "026-020",
+      "topic": "026-techniques",
+      "course": "026",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\int_0^1 x e^{2x}\\,\\mathrm dx$。",
+        "en": "Evaluate $\\displaystyle\\int_0^1 x e^{2x}\\,\\mathrm dx$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "取 $u=x$，$\\mathrm dv=e^{2x}\\,\\mathrm dx$，于是 $v=\\frac12e^{2x}$。积分为 $\\left[\\frac12xe^{2x}-\\frac14e^{2x}\\right]_0^1=\\frac{e^2+1}{4}$。",
+              "en": "Take $u=x$ and $\\mathrm dv=e^{2x}\\,\\mathrm dx$, giving $v=\\frac12e^{2x}$. The integral is $\\left[\\frac12xe^{2x}-\\frac14e^{2x}\\right]_0^1=\\frac{e^2+1}{4}$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac{e^2-1}{4}$",
+          "en": "$\\frac{e^2-1}{4}$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac{e^2+1}{4}$",
+          "en": "$\\frac{e^2+1}{4}$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\frac{e^2}{2}$",
+          "en": "$\\frac{e^2}{2}$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\frac{e^2+1}{2}$",
+          "en": "$\\frac{e^2+1}{2}$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-023",
+        "026-019"
+      ]
+    },
+    {
+      "id": "026-021",
+      "topic": "026-continuity",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "设 $f(x)=ax+b$（$x<1$），$f(x)=x^2+2x$（$x\\ge1$）。求 $(a,b)$ 使 $f$ 在 $1$ 可导，并说明连续性条件。",
+        "en": "Let $f(x)=ax+b$ for $x<1$ and $f(x)=x^2+2x$ for $x\\ge1$. Find $(a,b)$ for differentiability at $1$, and explain the continuity condition."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "可导必连续，故 $a+b=f(1)=3$。在这个条件下，左差商恒为 $a$。",
+              "en": "Differentiability implies continuity, so $a+b=f(1)=3$. With that condition, the left difference quotient is exactly $a$."
+            },
+            {
+              "zh": "右差商等于 $\\frac{(1+h)^2+2(1+h)-3}{h}=4+h$（$h>0$），极限为 $4$。令两侧相等得 $a=4$、$b=-1$。",
+              "en": "The right difference quotient is $\\frac{(1+h)^2+2(1+h)-3}{h}=4+h$ for $h>0$, with limit $4$. Equality gives $a=4$ and $b=-1$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-009",
+        "026-008"
+      ]
+    },
+    {
+      "id": "026-022",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "一条旧墙作为一边，其余三边用 $48$ 米围栏围矩形。求最大面积和相应边长，并证明取到全局最大值。",
+        "en": "An existing wall forms one side of a rectangle. The other three sides require $48$ metres of fencing. Find the maximum area and dimensions, and justify global maximality."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "设垂直墙的边长为 $x$ 米，则平行墙的边为 $48-2x$ 米。允许退化端点时，$x\\in[0,24]$。",
+              "en": "Let $x$ be the length perpendicular to the wall. The parallel side is $48-2x$. Including degenerate endpoints gives $x\\in[0,24]$."
+            },
+            {
+              "zh": "面积 $A(x)=48x-2x^2$，$A'(x)=48-4x$。它在 $(0,12)$ 为正，在 $(12,24)$ 为负，因此全局最大值在 $x=12$ 取得。",
+              "en": "The area is $A(x)=48x-2x^2$, with derivative $48-4x$. It is positive on $(0,12)$ and negative on $(12,24)$, so the global maximum occurs at $x=12$."
+            },
+            {
+              "zh": "此时平行墙的边长为 $24$ 米，面积为 $288$ 平方米。",
+              "en": "The parallel side is $24$ metres and the area is $288$ square metres."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "配方得 $A(x)=288-2(x-12)^2$。平方项非负，故面积不超过 $288$，且 $x=12$ 时取等。",
+              "en": "Complete the square: $A(x)=288-2(x-12)^2$. The nonnegative square shows the area cannot exceed $288$, with equality at $x=12$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-015",
+        "026-030"
+      ]
+    },
+    {
+      "id": "026-023",
+      "topic": "026-techniques",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\int_0^1 x\\ln(1+x^2)\\,\\mathrm dx$，给出完整的换元和积分步骤。",
+        "en": "Evaluate $\\displaystyle\\int_0^1 x\\ln(1+x^2)\\,\\mathrm dx$, showing the substitution and integration steps."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "令 $u=1+x^2$，则 $\\mathrm du=2x\\,\\mathrm dx$，新上下限分别为 $1,2$。原积分等于 $\\frac12\\int_1^2\\ln u\\,\\mathrm du$。",
+              "en": "Set $u=1+x^2$. Then $\\mathrm du=2x\\,\\mathrm dx$ and the new limits are $1,2$. The integral becomes $\\frac12\\int_1^2\\ln u\\,\\mathrm du$."
+            },
+            {
+              "zh": "对 $\\ln u$ 分部积分得 $u\\ln u-u$，故结果为 $\\frac12[ u\\ln u-u ]_1^2=\\ln2-\\frac12$。",
+              "en": "Integration by parts gives the antiderivative $u\\ln u-u$, yielding $\\frac12[ u\\ln u-u ]_1^2=\\ln2-\\frac12$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "直接取 $v=\\frac12(1+x^2)$ 作为 $x$ 的原函数，并对 $\\ln(1+x^2)$ 求导。分部积分后剩下 $\\int_0^1 x\\,\\mathrm dx$，故为 $\\ln2-\\frac12$。",
+              "en": "Apply integration by parts directly using $v=\\frac12(1+x^2)$ as an antiderivative of $x$ and differentiating $\\ln(1+x^2)$. The remaining integral is $\\int_0^1 x\\,\\mathrm dx$, again giving $\\ln2-\\frac12$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-020",
+        "026-019"
+      ]
+    },
+    {
+      "id": "026-024",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "判断：若 $f$ 在 $a$ 连续，则 $f$ 在 $a$ 可导。",
+        "en": "True or false: Continuity at $a$ implies differentiability at $a$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "反例为 $f(x)=|x|$，它在 $0$ 连续，但左右差商分别为 $-1$ 和 $1$，导数不存在。",
+              "en": "For a counterexample take $f(x)=|x|$. It is continuous at $0$, but the left and right difference quotients are $-1$ and $1$, so the derivative does not exist."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "related": [
+        "026-010",
+        "026-011"
+      ]
+    },
+    {
+      "id": "026-025",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "证明 $\\displaystyle\\lim_{x\\to0}x^2\\cos(\\frac{1}{x})=0$，并说明尽管余弦因子没有极限，为什么整个乘积的极限存在。",
+        "en": "Prove $\\displaystyle\\lim_{x\\to0}x^2\\cos(\\frac{1}{x})=0$ and explain why the product converges even though the cosine factor has no limit."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "当 $x\\ne0$ 时，由余弦值的界 $-1\\le\\cos(\\frac{1}{x})\\le1$，乘以 $x^2$ 得 $-x^2\\le x^2\\cos(\\frac{1}{x})\\le x^2$。",
+              "en": "For $x\\ne0$, the bound $-1\\le\\cos(\\frac{1}{x})\\le1$ multiplied by $x^2$ gives $-x^2\\le x^2\\cos(\\frac{1}{x})\\le x^2$."
+            },
+            {
+              "zh": "两个界都趋于零，夹逼定理给出所求极限。这个论证只用余弦有界，不要求它收敛。",
+              "en": "Both bounds tend to zero, so the squeeze theorem gives the limit. The argument uses boundedness of the cosine factor and does not require convergence of that factor."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-006",
+        "026-005"
+      ]
+    },
+    {
+      "id": "026-026",
+      "topic": "026-rates",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "一架长 $13$ 米的梯子靠在竖墙上。梯脚距墙 $5$ 米时，正以 $2$ 米每秒远离墙。求此刻梯顶的竖直速度，向上为正。",
+        "en": "A $13$-metre ladder leans against a vertical wall. When its foot is $5$ metres from the wall, it is moving away at $2$ metres per second. Find the signed vertical velocity of the top, with up positive."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "设水平距离为 $x$，顶端高度为 $y$，则 $x^2+y^2=169$，当前 $y=12$。",
+              "en": "Let $x$ be the horizontal distance and $y$ the top’s height. Then $x^2+y^2=169$, and the current height is $12$."
+            },
+            {
+              "zh": "对时间求导并代入：$\\frac{\\mathrm dy}{\\mathrm dt}=-\\frac{x}{y}\\frac{\\mathrm dx}{\\mathrm dt}=-\\frac{5}{6}$ 米每秒，方向朝下。",
+              "en": "Differentiate in time and substitute: $\\frac{\\mathrm dy}{\\mathrm dt}=-\\frac{x}{y}\\frac{\\mathrm dx}{\\mathrm dt}=-\\frac{5}{6}$ metres per second, directed down."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "用正根 $y=\\sqrt{169-x^2}$ 显式表示高度，在 $x=5$ 处用链式法则。",
+              "en": "Write the positive height as $y=\\sqrt{169-x^2}$ and apply the chain rule at $x=5$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-013"
+      ]
+    },
+    {
+      "id": "026-027",
+      "topic": "026-integral",
+      "course": "026",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\int_{-2}^{2}(x^3+1)\\,\\mathrm dx$，填写整数。",
+        "en": "Evaluate $\\displaystyle\\int_{-2}^{2}(x^3+1)\\,\\mathrm dx$ as an integer."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "$x^3$ 是奇函数，在对称区间上积分为 $0$。常数项 $1$ 积分为区间长度 $4$。",
+              "en": "The odd term $x^3$ integrates to zero over the symmetric interval. The constant integrates to its length, $4$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "也可用原函数 $\\frac{x^4}{4}+x$ 在两个端点求差。",
+              "en": "Alternatively evaluate the antiderivative $\\frac{x^4}{4}+x$ at the endpoints and subtract."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "4"
+      ],
+      "related": [
+        "026-017",
+        "026-018"
+      ]
+    },
+    {
+      "id": "026-028",
+      "topic": "026-functions",
+      "course": "026",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $f(x)=\\frac{x+5}{x-2}$ 的反函数及其定义域。",
+        "en": "Find the inverse of $f(x)=\\frac{x+5}{x-2}$ and state its domain."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "由 $y(x-2)=x+5$ 得 $(y-1)x=2y+5$。$y=1$ 不可能，因为它会要求 $-2=5$。",
+              "en": "From $y(x-2)=x+5$ obtain $(y-1)x=2y+5$. The value $y=1$ is impossible because it would require $-2=5$."
+            },
+            {
+              "zh": "故 $f^{-1}(t)=\\frac{2t+5}{t-1}$，定义域为 $\\mathbb R\\setminus\\{1\\}$。任取 $t\\ne1$，该公式所得值不同于 $2$，代回原函数即得 $t$。",
+              "en": "Thus $f^{-1}(t)=\\frac{2t+5}{t-1}$ with domain $\\mathbb R\\setminus\\{1\\}$. For any such $t$, the formula gives a value other than $2$, and substitution into $f$ yields $t$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-002",
+        "026-003"
+      ]
+    },
+    {
+      "id": "026-029",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "判断：若 $\\lim_{x\\to0^-}f(x)=3$ 且 $\\lim_{x\\to0^+}f(x)=3$，则 $f(0)$ 必须有定义。",
+        "en": "True or false: If $\\lim_{x\\to0^-}f(x)=3$ and $\\lim_{x\\to0^+}f(x)=3$, then $f(0)$ must be defined."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "两单侧极限相同只能推出双侧极限为 $3$。例如 $f(x)=3$ 定义在 $\\mathbb R\\setminus\\{0\\}$，双侧极限存在且 $f(0)$ 未定义。",
+              "en": "Equal one-sided limits give the two-sided limit $3$. For example, $f(x)=3$ on $\\mathbb R\\setminus\\{0\\}$ has that limit even though $f(0)$ is undefined."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "related": [
+        "026-004",
+        "026-005"
+      ]
+    },
+    {
+      "id": "026-030",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "short",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to0}\\frac{e^{3x}-1-3x}{x^2}$。填分数或等值小数。",
+        "en": "Evaluate $\\displaystyle\\lim_{x\\to0}\\frac{e^{3x}-1-3x}{x^2}$. Enter a fraction or equivalent decimal."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "分子分母同趋于零。一次洛必达化为 $\\lim_{x\\to0}\\frac{3e^{3x}-3}{2x}$，仍为零比零。再用一次得到 $\\lim_{x\\to0}\\frac{9e^{3x}}{2}=\\frac92$。",
+              "en": "Numerator and denominator both vanish. One application of L’Hôpital gives $\\lim_{x\\to0}\\frac{3e^{3x}-3}{2x}$, again a zero-over-zero form. Applying it once more gives $\\lim_{x\\to0}\\frac{9e^{3x}}{2}=\\frac92$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "9/2",
+        "4.5",
+        "4.50"
+      ],
+      "related": [
+        "026-015",
+        "026-022"
+      ]
+    },
+    {
+      "id": "026-031",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "在 $|2x|<1$ 的区间，求 $g(x)=\\arcsin(2x)$ 的导数。",
+        "en": "For $|2x|<1$, find the derivative of $g(x)=\\arcsin(2x)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "对反正弦用链式法则，外层在 $2x$ 的导数为 $\\frac{1}{\\sqrt{1-4x^2}}$，内层导数是 $2$。",
+              "en": "Apply the chain rule. The derivative of arcsine at $2x$ is $\\frac{1}{\\sqrt{1-4x^2}}$, and the inner derivative is $2$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "令 $y=\\arcsin(2x)$，则 $\\sin y=2x$。由 $y\\in(-\\frac{\\pi}{2},\\frac{\\pi}{2})$ 得 $\\cos y=\\sqrt{1-4x^2}>0$，故隐式求导给出相同的结果。",
+              "en": "Let $y=\\arcsin(2x)$ so that $\\sin y=2x$. Its principal range gives $\\cos y=\\sqrt{1-4x^2}>0$. Implicit differentiation gives the same result."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac{1}{\\sqrt{1-4x^2}}$",
+          "en": "$\\frac{1}{\\sqrt{1-4x^2}}$"
+        },
+        {
+          "id": "b",
+          "zh": "$-\\frac{2}{\\sqrt{1-4x^2}}$",
+          "en": "$-\\frac{2}{\\sqrt{1-4x^2}}$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\frac{2}{1+4x^2}$",
+          "en": "$\\frac{2}{1+4x^2}$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\frac{2}{\\sqrt{1-4x^2}}$",
+          "en": "$\\frac{2}{\\sqrt{1-4x^2}}$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-024",
+        "026-011"
+      ]
+    },
+    {
+      "id": "026-032",
+      "topic": "026-integral",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "$y=x-1$ 与 $x$ 轴在 $0\\le x\\le3$ 之间围成区域。求总面积。",
+        "en": "Find the total area between $y=x-1$ and the $x$-axis for $0\\le x\\le3$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "在 $x=1$ 变号。左、右两块都是三角形，面积分别为 $\\frac12$ 与 $2$，故总面积为 $\\frac52$。",
+              "en": "The function changes sign at $x=1$. The two triangular regions have areas $\\frac12$ and $2$, giving $\\frac52$ in total."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "积分被积函数的绝对值：$\\int_0^1(1-x)\\,\\mathrm dx+\\int_1^3(x-1)\\,\\mathrm dx=\\frac52$。",
+              "en": "Integrate the absolute value: $\\int_0^1(1-x)\\,\\mathrm dx+\\int_1^3(x-1)\\,\\mathrm dx=\\frac52$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac52$",
+          "en": "$\\frac52$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac32$",
+          "en": "$\\frac32$"
+        },
+        {
+          "id": "c",
+          "zh": "$2$",
+          "en": "$2$"
+        },
+        {
+          "id": "d",
+          "zh": "$3$",
+          "en": "$3$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-027",
+        "026-017"
+      ]
+    },
+    {
+      "id": "026-033",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "判断：若函数在开区间内处处可导，且在某点取得局部最大值，则该点的导数为零。",
+        "en": "True or false: A differentiable function attaining a local maximum at an interior point has derivative zero there."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "设极大值点为 $c$。离 $c$ 充分近时 $f(c+h)-f(c)\\le0$。左差商非负而右差商非正。由于导数存在、两侧相等，公共值只能是零。",
+              "en": "Let $c$ be the point. For small $h$, $f(c+h)-f(c)\\le0$. The left difference quotients are nonnegative and the right ones nonpositive. Since their limits agree, the common value is zero."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "true"
+      ],
+      "related": [
+        "026-014",
+        "026-016"
+      ]
+    },
+    {
+      "id": "026-034",
+      "topic": "026-continuity",
+      "course": "026",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "令 $f(x)=\\frac{x^2-25}{x-5}$（$x\\ne5$）。填写 $f(5)$ 使函数连续。",
+        "en": "Let $f(x)=\\frac{x^2-25}{x-5}$ for $x\\ne5$. Enter the value of $f(5)$ that makes the function continuous."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "当 $x\\ne5$ 时约去因子 $x-5$ 得 $x+5$。在 $5$ 处的极限是 $10$，连续延拓必须取这个值。",
+              "en": "For $x\\ne5$, cancelling $x-5$ gives $x+5$. Its limit at $5$ is $10$, so this is the unique continuous extension value."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "10"
+      ],
+      "related": [
+        "026-008",
+        "026-009"
+      ]
+    },
+    {
+      "id": "026-035",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "short",
+      "level": 2,
+      "prompt": {
+        "zh": "计算 $\\displaystyle\\lim_{x\\to-\\infty}\\frac{3x^2+2x-1}{1-x^2}$。填写整数。",
+        "en": "Evaluate $\\displaystyle\\lim_{x\\to-\\infty}\\frac{3x^2+2x-1}{1-x^2}$. Enter an integer."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "同除以 $x^2$，分子趋于 $3$、分母趋于 $-1$。分母极限非零，所以商趋于 $-3$。",
+              "en": "Divide both terms by $x^2$. The numerator tends to $3$ and the denominator to $-1$. Since the latter is nonzero, the quotient tends to $-3$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "-3"
+      ],
+      "related": [
+        "026-005",
+        "026-007"
+      ]
+    },
+    {
+      "id": "026-036",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "对 $p(x)=x^3-3x^2$，找出单调区间、局部极值及拐点，并说明各分界处的符号变化。",
+        "en": "For $p(x)=x^3-3x^2$, determine the intervals of monotonicity, local extrema, and inflection point. Justify the sign changes at the relevant boundaries."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "$p^{\\prime}(x)=3x(x-2)$。它在 $(-\\infty,0)$、$(2,\\infty)$ 为正，在 $(0,2)$ 为负。因此函数先增后减再增。",
+              "en": "The derivative is $p^{\\prime}(x)=3x(x-2)$. It is positive on $(-\\infty,0)$ and $(2,\\infty)$ and negative on $(0,2)$. The function therefore increases, decreases, and then increases."
+            },
+            {
+              "zh": "在 $0$ 处由增变减，局部最大值 $p(0)=0$。在 $2$ 处由减变增，局部最小值 $p(2)=-4$。",
+              "en": "At $0$ the sign changes from positive to negative, giving a local maximum $p(0)=0$. At $2$ the sign changes from negative to positive, giving a local minimum $p(2)=-4$."
+            },
+            {
+              "zh": "二阶导数 $p^{\\prime\\prime}(x)=6(x-1)$ 在 $1$ 两侧由负变正。凹凸性改变，拐点是 $(1,-2)$。",
+              "en": "The second derivative $p^{\\prime\\prime}(x)=6(x-1)$ changes from negative to positive at $1$. The change in concavity gives the inflection point $(1,-2)$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "也可用二阶导数判别法确认两个临界点：$p^{\\prime\\prime}(0)=-6<0$、$p^{\\prime\\prime}(2)=6>0$。单调区间仍可由一阶导数符号得出。",
+              "en": "The second derivative test also classifies the critical points because $p^{\\prime\\prime}(0)=-6<0$ and $p^{\\prime\\prime}(2)=6>0$. The first derivative sign gives the monotonicity intervals."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-015",
+        "026-030"
+      ]
+    }
+  ]
+}

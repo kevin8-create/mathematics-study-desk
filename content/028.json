@@ -1,0 +1,1630 @@
+{
+  "topics": [
+    {
+      "id": "028-systems",
+      "course": "028",
+      "zh": "线性方程组与消元",
+      "en": "Systems and elimination",
+      "summaryZh": "用主元和增广列判断解的结构。",
+      "summaryEn": "Read pivots and the augmented column to classify solutions.",
+      "terms": [
+        {
+          "zh": "主元",
+          "en": "pivot"
+        },
+        {
+          "zh": "行阶梯形",
+          "en": "row echelon form"
+        }
+      ]
+    },
+    {
+      "id": "028-vectors",
+      "course": "028",
+      "zh": "向量方程与线性无关",
+      "en": "Vector equations and independence",
+      "summaryZh": "在向量、矩阵和齐次方程之间转换。",
+      "summaryEn": "Connect vector combinations, matrix equations and homogeneous systems.",
+      "terms": [
+        {
+          "zh": "张成",
+          "en": "span"
+        },
+        {
+          "zh": "线性无关",
+          "en": "linear independence"
+        }
+      ]
+    },
+    {
+      "id": "028-maps",
+      "course": "028",
+      "zh": "线性变换",
+      "en": "Linear transformations",
+      "summaryZh": "用标准基的像构造变换矩阵。",
+      "summaryEn": "Build the standard matrix from the images of basis vectors.",
+      "terms": [
+        {
+          "zh": "标准矩阵",
+          "en": "standard matrix"
+        },
+        {
+          "zh": "像",
+          "en": "image"
+        }
+      ]
+    },
+    {
+      "id": "028-matrices",
+      "course": "028",
+      "zh": "矩阵运算与可逆性",
+      "en": "Matrix operations and invertibility",
+      "summaryZh": "检查乘积的顺序，并用逆矩阵或主元判断可逆性。",
+      "summaryEn": "Track product order and test invertibility using inverses or pivots.",
+      "terms": [
+        {
+          "zh": "逆矩阵",
+          "en": "inverse matrix"
+        },
+        {
+          "zh": "单位矩阵",
+          "en": "identity matrix"
+        }
+      ]
+    },
+    {
+      "id": "028-spaces",
+      "course": "028",
+      "zh": "子空间、维数与秩",
+      "en": "Subspaces, dimension and rank",
+      "summaryZh": "从主元列和自由变量找出基与维数。",
+      "summaryEn": "Use pivot columns and free variables to find bases and dimensions.",
+      "terms": [
+        {
+          "zh": "零空间",
+          "en": "null space"
+        },
+        {
+          "zh": "列空间",
+          "en": "column space"
+        },
+        {
+          "zh": "秩",
+          "en": "rank"
+        }
+      ]
+    },
+    {
+      "id": "028-dets",
+      "course": "028",
+      "zh": "行列式",
+      "en": "Determinants",
+      "summaryZh": "结合余子式展开和行运算计算行列式。",
+      "summaryEn": "Compute determinants by cofactor expansion and row operations.",
+      "terms": [
+        {
+          "zh": "余子式",
+          "en": "minor"
+        },
+        {
+          "zh": "代数余子式",
+          "en": "cofactor"
+        }
+      ]
+    },
+    {
+      "id": "028-eigen",
+      "course": "028",
+      "zh": "特征值与特征向量",
+      "en": "Eigenvalues and eigenvectors",
+      "summaryZh": "解特征方程并描述相应特征空间。",
+      "summaryEn": "Solve characteristic equations and describe the associated eigenspaces.",
+      "terms": [
+        {
+          "zh": "特征空间",
+          "en": "eigenspace"
+        },
+        {
+          "zh": "特征方程",
+          "en": "characteristic equation"
+        }
+      ]
+    },
+    {
+      "id": "028-diag",
+      "course": "028",
+      "zh": "对角化",
+      "en": "Diagonalization",
+      "summaryZh": "用一组线性无关的特征向量构造相似分解。",
+      "summaryEn": "Construct a similarity decomposition from independent eigenvectors.",
+      "terms": [
+        {
+          "zh": "对角化",
+          "en": "diagonalization"
+        },
+        {
+          "zh": "特征基",
+          "en": "eigenbasis"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "028-q01",
+      "course": "028",
+      "topic": "028-systems",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "方程 $x+y=5,\\ 2x-y=1$ 中 $x$ 等于多少？",
+        "en": "Find $x$ in $x+y=5,\\ 2x-y=1$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "相加消去 $y$，得 $3x=6$。",
+              "en": "Add the equations to eliminate $y$, giving $3x=6$."
+            },
+            {
+              "zh": "因此 $x=2$；代回得 $y=3$。",
+              "en": "Thus $x=2$, and substitution yields $y=3$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "2"
+      ],
+      "related": [
+        "028-q02",
+        "028-q03"
+      ]
+    },
+    {
+      "id": "028-q02",
+      "course": "028",
+      "topic": "028-systems",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "增广矩阵的阶梯形含有一行 $[0\\ 0\\ 0\\mid 4]$。有多少组解？",
+        "en": "An echelon form of an augmented matrix contains $[0\\ 0\\ 0\\mid 4]$. How many solutions exist?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "该行表示 $0=4$。",
+              "en": "This row asserts $0=4$."
+            },
+            {
+              "zh": "它对任何未知量都不成立，故无解。",
+              "en": "No values of the variables satisfy it, so there is no solution."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "零组",
+          "en": "None"
+        },
+        {
+          "id": "b",
+          "zh": "一组",
+          "en": "One"
+        },
+        {
+          "id": "c",
+          "zh": "无穷多组",
+          "en": "Infinitely many"
+        }
+      ],
+      "related": [
+        "028-q01",
+        "028-q03"
+      ]
+    },
+    {
+      "id": "028-q03",
+      "course": "028",
+      "topic": "028-systems",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $x+2y-z=3,\\ 2x+4y-2z=6$ 的参数解。",
+        "en": "Parametrize the solutions of $x+2y-z=3,\\ 2x+4y-2z=6$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "第二行减去第一行的两倍得零行，只有 $x$ 是主元变量。",
+              "en": "Subtract twice row one from row two to obtain a zero row. Only $x$ is a pivot variable."
+            },
+            {
+              "zh": "令 $y=s,z=t$，则 $(x,y,z)=(3-2s+t,s,t)$，其中 $s,t\\in\\mathbb R$。",
+              "en": "Set $y=s,z=t$. Then $(x,y,z)=(3-2s+t,s,t)$ for $s,t\\in\\mathbb R$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q01",
+        "028-q02"
+      ]
+    },
+    {
+      "id": "028-q04",
+      "course": "028",
+      "topic": "028-systems",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "根据 $k$ 分类讨论 $x+y=2,\\ 2x+ky=5$ 的解。",
+        "en": "Classify the solutions to $x+y=2,\\ 2x+ky=5$ for all real $k$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "第二行减去第一行的两倍得 $(k-2)y=1$。",
+              "en": "Subtract twice the first equation from the second to obtain $(k-2)y=1$."
+            },
+            {
+              "zh": "若 $k=2$，得到矛盾。若 $k\\ne2$，有唯一解 $y=\\frac1{k-2},\\ x=2-\\frac1{k-2}$。",
+              "en": "For $k=2$ this is inconsistent. Otherwise the unique solution is $y=\\frac1{k-2},\\ x=2-\\frac1{k-2}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q01",
+        "028-q02"
+      ]
+    },
+    {
+      "id": "028-q05",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "若 $(5,1)=a(1,1)+b(1,-1)$，求 $a$。",
+        "en": "Given $(5,1)=a(1,1)+b(1,-1)$, find $a$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "比较坐标得 $a+b=5$ 和 $a-b=1$。",
+              "en": "Compare coordinates to get $a+b=5$ and $a-b=1$."
+            },
+            {
+              "zh": "相加得 $2a=6$，所以 $a=3$。",
+              "en": "Adding yields $2a=6$, so $a=3$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "3"
+      ],
+      "related": [
+        "028-q06",
+        "028-q07"
+      ]
+    },
+    {
+      "id": "028-q06",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "每个齐次线性方程组都有零解。",
+        "en": "Every homogeneous linear system has the zero solution."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "齐次方程的矩阵形式为 $Ax=0$。",
+              "en": "A homogeneous system has the form $Ax=0$."
+            },
+            {
+              "zh": "令 $x=0$ 即满足等式，无论是否有自由变量。",
+              "en": "Taking $x=0$ satisfies it regardless of whether free variables exist."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "true"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q05",
+        "028-q07"
+      ]
+    },
+    {
+      "id": "028-q07",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "用一个非零系数组合判断 $(1,0,1),(0,1,1),(2,3,5)$ 是否线性无关。",
+        "en": "Use a nontrivial coefficient relation to test independence of $(1,0,1),(0,1,1),(2,3,5)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "记向量依次为 $u,v,w$。计算 $2u+3v=(2,3,5)=w$。",
+              "en": "Write the vectors as $u,v,w$. Compute $2u+3v=(2,3,5)=w$."
+            },
+            {
+              "zh": "故 $2u+3v-w=0$，系数非全零，向量组线性相关。",
+              "en": "Hence $2u+3v-w=0$ with nonzero coefficients, proving dependence."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q05",
+        "028-q06",
+        "028-q32"
+      ]
+    },
+    {
+      "id": "028-q08",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "两种套餐各含 $(2,1)$ 和 $(1,3)$ 份甲乙原料。写出矩阵方程，求刚好使用 $(9,12)$ 份原料时两种套餐的数量。",
+        "en": "Two kits consume $(2,1)$ and $(1,3)$ units of two supplies. Write a matrix equation and find the kit counts that use exactly $(9,12)$ units."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "将每种套餐的用量作为列，得到 $\\begin{bmatrix}2&1\\\\1&3\\end{bmatrix}\\binom{x}{y}=\\binom9{12}$。",
+              "en": "Use each kit recipe as a column: $\\begin{bmatrix}2&1\\\\1&3\\end{bmatrix}\\binom{x}{y}=\\binom9{12}$."
+            },
+            {
+              "zh": "由 $y=9-2x$ 代入 $x+3y=12$ 得 $x=3$，故 $y=3$。",
+              "en": "Substitute $y=9-2x$ into $x+3y=12$ to find $x=3$, then $y=3$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q05",
+        "028-q06",
+        "028-q32"
+      ]
+    },
+    {
+      "id": "028-q09",
+      "course": "028",
+      "topic": "028-maps",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "映射 $T(x,y)=(x+2,y)$ 是线性变换。",
+        "en": "The map $T(x,y)=(x+2,y)$ is linear."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "线性映射必须将零向量映为零。",
+              "en": "A linear map must send zero to zero."
+            },
+            {
+              "zh": "这里 $T(0,0)=(2,0)$，违反此条件。",
+              "en": "Here $T(0,0)=(2,0)$, violating that requirement."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q10",
+        "028-q11"
+      ]
+    },
+    {
+      "id": "028-q10",
+      "course": "028",
+      "topic": "028-maps",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "线性变换满足 $T(1,0)=(2,-1),T(0,1)=(3,4)$。求标准矩阵与 $T(2,-1)$。",
+        "en": "A linear map satisfies $T(1,0)=(2,-1),T(0,1)=(3,4)$. Find its standard matrix and $T(2,-1)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "把基向量的像依次作为列，得 $A=\\begin{bmatrix}2&3\\\\-1&4\\end{bmatrix}$。",
+              "en": "Place the basis images into columns to form $A=\\begin{bmatrix}2&3\\\\-1&4\\end{bmatrix}$."
+            },
+            {
+              "zh": "按线性性，$T(2,-1)=2(2,-1)-(3,4)=(1,-6)$。",
+              "en": "Linearity gives $T(2,-1)=2(2,-1)-(3,4)=(1,-6)$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q09",
+        "028-q11",
+        "028-q33"
+      ]
+    },
+    {
+      "id": "028-q11",
+      "course": "028",
+      "topic": "028-maps",
+      "type": "short",
+      "level": 2,
+      "prompt": {
+        "zh": "线性变换 $T(x,y,z)=(x+z,y-z)$ 的核的维数是多少？",
+        "en": "Find the dimension of the kernel of $T(x,y,z)=(x+z,y-z)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "令输出为零，得到 $x=-z,y=z$。",
+              "en": "Set the output equal to zero to obtain $x=-z,y=z$."
+            },
+            {
+              "zh": "核由非零向量 $(-1,1,1)$ 张成，故维数为 1。",
+              "en": "The kernel is spanned by the nonzero vector $(-1,1,1)$ and has dimension 1."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "1"
+      ],
+      "related": [
+        "028-q09",
+        "028-q10",
+        "028-q33"
+      ]
+    },
+    {
+      "id": "028-q12",
+      "course": "028",
+      "topic": "028-matrices",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "若 $A$ 是 $3\\times2$，$B$ 是 $2\\times4$，则 $AB$ 的大小为？",
+        "en": "If $A$ is $3\\times2$ and $B$ is $2\\times4$, what is the size of $AB$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "内侧维数都是 2，因此乘积有定义。",
+              "en": "The inner dimensions agree at 2, so the product exists."
+            },
+            {
+              "zh": "外侧维数给出 3 行 4 列。",
+              "en": "The outer dimensions give three rows and four columns."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$2\\times2$",
+          "en": "$2\\times2$"
+        },
+        {
+          "id": "b",
+          "zh": "$3\\times4$",
+          "en": "$3\\times4$"
+        },
+        {
+          "id": "c",
+          "zh": "$4\\times3$",
+          "en": "$4\\times3$"
+        }
+      ],
+      "related": [
+        "028-q13",
+        "028-q14"
+      ]
+    },
+    {
+      "id": "028-q13",
+      "course": "028",
+      "topic": "028-matrices",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $A=\\begin{bmatrix}3&1\\\\2&2\\end{bmatrix}$ 的逆矩阵。",
+        "en": "Find the inverse of $A=\\begin{bmatrix}3&1\\\\2&2\\end{bmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "行列式为 $3\\cdot2-1\\cdot2=4$。",
+              "en": "The determinant is $3\\cdot2-1\\cdot2=4$."
+            },
+            {
+              "zh": "交换主对角元、改变两个非对角元的符号，再除以 4，得 $A^{-1}=\\frac14\\begin{bmatrix}2&-1\\\\-2&3\\end{bmatrix}$。",
+              "en": "Swap the diagonal entries, negate the off-diagonal entries and divide by 4: $A^{-1}=\\frac14\\begin{bmatrix}2&-1\\\\-2&3\\end{bmatrix}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q12",
+        "028-q14"
+      ]
+    },
+    {
+      "id": "028-q14",
+      "course": "028",
+      "topic": "028-matrices",
+      "type": "true-false",
+      "level": 2,
+      "prompt": {
+        "zh": "若 $A,B$ 为同阶可逆方阵，则 $(AB)^{-1}=B^{-1}A^{-1}$。",
+        "en": "If $A,B$ are invertible matrices of the same size, then $(AB)^{-1}=B^{-1}A^{-1}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "计算 $(AB)(B^{-1}A^{-1})=AIA^{-1}=I$。",
+              "en": "Compute $(AB)(B^{-1}A^{-1})=AIA^{-1}=I$."
+            },
+            {
+              "zh": "反序相乘也得 $B^{-1}A^{-1}AB=B^{-1}IB=I$。",
+              "en": "In the other order, $B^{-1}A^{-1}AB=B^{-1}IB=I$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "true"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q12",
+        "028-q13"
+      ]
+    },
+    {
+      "id": "028-q15",
+      "course": "028",
+      "topic": "028-matrices",
+      "type": "short",
+      "level": 2,
+      "prompt": {
+        "zh": "哪个实数 $t$ 使 $\\begin{bmatrix}1&3\\\\2&t\\end{bmatrix}$ 不可逆？",
+        "en": "For which real $t$ is $\\begin{bmatrix}1&3\\\\2&t\\end{bmatrix}$ singular?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "第二行减去第一行的两倍，得到第二行 $[0,t-6]$。",
+              "en": "Subtract twice row one from row two, leaving $[0,t-6]$."
+            },
+            {
+              "zh": "方阵失去第二个主元恰在 $t=6$ 时。",
+              "en": "The square matrix loses its second pivot exactly when $t=6$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "6"
+      ],
+      "related": [
+        "028-q12",
+        "028-q13"
+      ]
+    },
+    {
+      "id": "028-q16",
+      "course": "028",
+      "topic": "028-spaces",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "以下哪个集合是 $\\mathbb R^2$ 的子空间？",
+        "en": "Which set is a subspace of $\\mathbb R^2$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "方程 $x=2y$ 的解可写成 $y(2,1)$，所以它是一个张成空间。",
+              "en": "Solutions to $x=2y$ are multiples of $(2,1)$, so they form a span."
+            },
+            {
+              "zh": "另外两个集合都不含零向量。",
+              "en": "The other two sets omit the zero vector."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$x+y=1$",
+          "en": "$x+y=1$"
+        },
+        {
+          "id": "b",
+          "zh": "$x=2y$",
+          "en": "$x=2y$"
+        },
+        {
+          "id": "c",
+          "zh": "$x>0$",
+          "en": "$x>0$"
+        }
+      ],
+      "related": [
+        "028-q17",
+        "028-q18"
+      ]
+    },
+    {
+      "id": "028-q17",
+      "course": "028",
+      "topic": "028-spaces",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "一个 $4\\times7$ 矩阵有 3 个主元，其零空间的维数是多少？",
+        "en": "A $4\\times7$ matrix has three pivots. What is its nullity?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "7 个未知量中有 3 个主元变量，故有 $7-3=4$ 个自由变量。",
+              "en": "Among the seven unknowns, three are pivot variables, leaving $7-3=4$ free variables."
+            },
+            {
+              "zh": "每个自由变量贡献一个零空间基向量。",
+              "en": "Each free variable contributes one vector to a null-space basis."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "4"
+      ],
+      "related": [
+        "028-q16",
+        "028-q18"
+      ]
+    },
+    {
+      "id": "028-q18",
+      "course": "028",
+      "topic": "028-spaces",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $A=\\begin{bmatrix}1&2&0\\\\2&4&1\\\\0&0&1\\end{bmatrix}$ 的列空间和零空间各一组基。",
+        "en": "Give bases for the column space and null space of $A=\\begin{bmatrix}1&2&0\\\\2&4&1\\\\0&0&1\\end{bmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "第二列是第一列的两倍，第三列与第一列线性无关。所以列空间有基 $\\{(1,2,0),(0,1,1)\\}$。",
+              "en": "Column two is twice column one, while column three is independent of column one. A column-space basis is $\\{(1,2,0),(0,1,1)\\}$."
+            },
+            {
+              "zh": "由 $Ax=0$ 得 $x_3=0,x_1=-2x_2$，故零空间有基 $\\{(-2,1,0)\\}$。",
+              "en": "Solving $Ax=0$ gives $x_3=0,x_1=-2x_2$, so a null-space basis is $\\{(-2,1,0)\\}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q16",
+        "028-q17"
+      ]
+    },
+    {
+      "id": "028-q19",
+      "course": "028",
+      "topic": "028-spaces",
+      "type": "true-false",
+      "level": 2,
+      "prompt": {
+        "zh": "任意两个二维子空间只要同在 $\\mathbb R^3$ 中就必相等。",
+        "en": "Any two two-dimensional subspaces of $\\mathbb R^3$ must coincide."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "例如 $xy$ 平面和 $xz$ 平面都是二维子空间。",
+              "en": "The $xy$-plane and $xz$-plane both have dimension two."
+            },
+            {
+              "zh": "向量 $(0,1,0)$ 只在前一个平面内，所以两者不同。",
+              "en": "The vector $(0,1,0)$ lies only in the first, so the spaces differ."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q16",
+        "028-q17"
+      ]
+    },
+    {
+      "id": "028-q20",
+      "course": "028",
+      "topic": "028-dets",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "求 $\\begin{vmatrix}2&3\\\\-1&4\\end{vmatrix}$。",
+        "en": "Evaluate $\\begin{vmatrix}2&3\\\\-1&4\\end{vmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "用二阶行列式公式 $ad-bc$。",
+              "en": "Use the two-by-two formula $ad-bc$."
+            },
+            {
+              "zh": "代入得 $2\\cdot4-3(-1)=11$。",
+              "en": "It gives $2\\cdot4-3(-1)=11$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "用行变换核对",
+            "en": "Check by row reduction"
+          },
+          "steps": [
+            {
+              "zh": "第二行加上第一行的一半，行列式保持不变，矩阵成为上三角形。",
+              "en": "Add half of row one to row two. This preserves the determinant and gives an upper triangular matrix."
+            },
+            {
+              "zh": "主对角元的乘积为 $2(4+\\frac{3}{2})=11$。",
+              "en": "The product on the diagonal is $2(4+\\frac{3}{2})=11$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "11"
+      ],
+      "related": [
+        "028-q21",
+        "028-q22"
+      ]
+    },
+    {
+      "id": "028-q21",
+      "course": "028",
+      "topic": "028-dets",
+      "type": "short",
+      "level": 2,
+      "prompt": {
+        "zh": "已知 $\\det A=-3$。交换两行，再将新矩阵的第一行乘以 4，求最终行列式。",
+        "en": "Given $\\det A=-3$, swap two rows, then multiply the new first row by 4. Find the final determinant."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "交换两行使行列式变号，得 3。",
+              "en": "A row swap reverses the sign, giving 3."
+            },
+            {
+              "zh": "将一行乘 4 使行列式乘 4，故结果为 12。",
+              "en": "Scaling one row by 4 multiplies the determinant by 4, giving 12."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "12"
+      ],
+      "related": [
+        "028-q20",
+        "028-q22"
+      ]
+    },
+    {
+      "id": "028-q22",
+      "course": "028",
+      "topic": "028-dets",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "用代数余子式展开求 $\\det\\begin{bmatrix}0&2&0\\\\1&4&3\\\\2&0&5\\end{bmatrix}$。",
+        "en": "Use cofactor expansion to find $\\det\\begin{bmatrix}0&2&0\\\\1&4&3\\\\2&0&5\\end{bmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "沿第一行展开，唯一非零项位于 $(1,2)$，符号为负。",
+              "en": "Expand along row one. The sole nonzero entry is at $(1,2)$ with negative cofactor sign."
+            },
+            {
+              "zh": "删去第一行第二列，得结果 $-2(1\\cdot5-3\\cdot2)=2$。",
+              "en": "Deleting its row and column gives $-2(1\\cdot5-3\\cdot2)=2$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q20",
+        "028-q21"
+      ]
+    },
+    {
+      "id": "028-q23",
+      "course": "028",
+      "topic": "028-dets",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "若 $A$ 为 $3\\times3$ 方阵且 $\\det A=2$，则 $\\det(2A^{-1})$ 为多少？",
+        "en": "If $A$ is $3\\times3$ with determinant 2, find $\\det(2A^{-1})$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "由乘积法则得 $\\det(A^{-1})=\\frac{1}{2}$。",
+              "en": "The product rule gives $\\det(A^{-1})=\\frac{1}{2}$."
+            },
+            {
+              "zh": "三行都乘 2，所以 $\\det(2A^{-1})=\\frac{2^3}{2}=4$。",
+              "en": "All three rows scale by 2, so $\\det(2A^{-1})=\\frac{2^3}{2}=4$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "b",
+          "zh": "$2$",
+          "en": "$2$"
+        },
+        {
+          "id": "c",
+          "zh": "$4$",
+          "en": "$4$"
+        }
+      ],
+      "related": [
+        "028-q20",
+        "028-q21"
+      ]
+    },
+    {
+      "id": "028-q24",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "对 $A=\\begin{bmatrix}2&1\\\\0&3\\end{bmatrix}$，向量 $(1,1)$ 对应的特征值是多少？",
+        "en": "For $A=\\begin{bmatrix}2&1\\\\0&3\\end{bmatrix}$, which eigenvalue belongs to $(1,1)$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "计算 $A(1,1)^T=(3,3)^T$。",
+              "en": "Compute $A(1,1)^T=(3,3)^T$."
+            },
+            {
+              "zh": "像向量等于原非零向量的 3 倍。",
+              "en": "The image is three times the original nonzero vector."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "3"
+      ],
+      "related": [
+        "028-q25",
+        "028-q26"
+      ]
+    },
+    {
+      "id": "028-q25",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "写出 $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$ 的特征方程，并求所有特征值。",
+        "en": "Find the characteristic equation and all eigenvalues of $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "计算 $\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=\\lambda^2-7\\lambda+10$。",
+              "en": "Compute $\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=\\lambda^2-7\\lambda+10$."
+            },
+            {
+              "zh": "解 $(\\lambda-2)(\\lambda-5)=0$，得 2 和 5。",
+              "en": "Solving $(\\lambda-2)(\\lambda-5)=0$ gives 2 and 5."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q24",
+        "028-q26"
+      ]
+    },
+    {
+      "id": "028-q26",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "对 $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$，求特征值 2 的特征空间的一组基。",
+        "en": "Give a basis for the eigenspace of $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$ corresponding to 2."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "解 $(A-2I)v=0$。两行均给出条件 $x+y=0$。",
+              "en": "Solve $(A-2I)v=0$. Both rows impose $x+y=0$."
+            },
+            {
+              "zh": "取 $y=-x$，则 $v=x(1,-1)$，故一组基为 $\\{(1,-1)\\}$。",
+              "en": "With $y=-x$, write $v=x(1,-1)$, giving the basis $\\{(1,-1)\\}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q24",
+        "028-q25",
+        "028-q34"
+      ]
+    },
+    {
+      "id": "028-q27",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "true-false",
+      "level": 2,
+      "prompt": {
+        "zh": "零向量是每个方阵对应特征值 0 的特征向量。",
+        "en": "The zero vector is an eigenvector of every square matrix for eigenvalue zero."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "特征向量按定义必须非零。",
+              "en": "An eigenvector is nonzero by definition."
+            },
+            {
+              "zh": "只有当 $Ax=0$ 有非零解时，0 才是 $A$ 的特征值。",
+              "en": "Zero is an eigenvalue of $A$ precisely when $Ax=0$ has a nonzero solution."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q24",
+        "028-q25",
+        "028-q34"
+      ]
+    },
+    {
+      "id": "028-q28",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "将 $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$ 对角化，给出 $P,D$ 并检验。",
+        "en": "Diagonalize $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$. Give $P,D$ and verify."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "由 $\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=(\\lambda-2)(\\lambda-5)$ 得特征值 2 和 5。直接相乘可验证 $A(1,-1)^T=2(1,-1)^T$，$A(2,1)^T=5(2,1)^T$。",
+              "en": "Factoring $\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=(\\lambda-2)(\\lambda-5)$ gives eigenvalues 2 and 5. Multiplication confirms $A(1,-1)^T=2(1,-1)^T$ and $A(2,1)^T=5(2,1)^T$."
+            },
+            {
+              "zh": "取 $P=\\begin{bmatrix}1&2\\\\-1&1\\end{bmatrix},D=\\operatorname{diag}(2,5)$。上述两个等式给出 $AP=PD$，而 $\\det P=3\\ne0$，故 $A=PDP^{-1}$。",
+              "en": "Set $P=\\begin{bmatrix}1&2\\\\-1&1\\end{bmatrix},D=\\operatorname{diag}(2,5)$. The two checks give $AP=PD$. Since $\\det P=3\\ne0$, this yields $A=PDP^{-1}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q29",
+        "028-q30"
+      ]
+    },
+    {
+      "id": "028-q29",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "true-false",
+      "level": 2,
+      "prompt": {
+        "zh": "任何仅有一个不同特征值的 $2\\times2$ 实矩阵都不能在实数域上对角化。",
+        "en": "Every real $2\\times2$ matrix with only one distinct eigenvalue fails to be diagonalizable over the reals."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "取 $A=3I$。它的唯一特征值是 3。",
+              "en": "Take $A=3I$, whose only eigenvalue is 3."
+            },
+            {
+              "zh": "两个标准基向量都是特征向量，因此 $A$ 已是对角矩阵。",
+              "en": "Both standard basis vectors are eigenvectors, and $A$ is already diagonal."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q28",
+        "028-q30"
+      ]
+    },
+    {
+      "id": "028-q30",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "判断 $J=\\begin{bmatrix}2&1\\\\0&2\\end{bmatrix}$ 能否对角化，并用特征空间维数说明。",
+        "en": "Decide whether $J=\\begin{bmatrix}2&1\\\\0&2\\end{bmatrix}$ is diagonalizable. Justify using eigenspace dimension."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "特征多项式为 $(\\lambda-2)^2$，故只有特征值 2。",
+              "en": "The characteristic polynomial is $(\\lambda-2)^2$, so 2 is the sole eigenvalue."
+            },
+            {
+              "zh": "由 $(J-2I)v=0$ 得 $y=0$，故特征空间只有一维，无法构造两个无关的特征向量。",
+              "en": "Solving $(J-2I)v=0$ gives $y=0$. The eigenspace is one-dimensional and cannot supply two independent eigenvectors."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q28",
+        "028-q29",
+        "028-q35"
+      ]
+    },
+    {
+      "id": "028-q31",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "short",
+      "level": 3,
+      "prompt": {
+        "zh": "若 $A(1,0)^T=2(1,0)^T$ 且 $A(1,1)^T=3(1,1)^T$，求 $A^3(2,1)^T$ 的第一分量。",
+        "en": "Suppose $A(1,0)^T=2(1,0)^T$ and $A(1,1)^T=3(1,1)^T$. Find the first component of $A^3(2,1)^T$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "分解 $(2,1)=(1,0)+(1,1)$。",
+              "en": "Decompose $(2,1)=(1,0)+(1,1)$."
+            },
+            {
+              "zh": "分别乘以对应特征值的立方，得 $8(1,0)+27(1,1)=(35,27)$。",
+              "en": "Scale each part by its eigenvalue cubed: $8(1,0)+27(1,1)=(35,27)$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "35"
+      ],
+      "related": [
+        "028-q28",
+        "028-q29",
+        "028-q35"
+      ]
+    },
+    {
+      "id": "028-q32",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "向量 $u,v$ 线性无关。对哪些实数 $t$，向量 $u+tv$ 与 $tu+v$ 线性相关？",
+        "en": "Let $u,v$ be independent. For which real $t$ are $u+tv$ and $tu+v$ dependent?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "设两向量的线性组合为零。按 $u,v$ 收集系数，得 $a+tb=0,\\ ta+b=0$。",
+              "en": "Set a linear combination equal to zero. Independence of $u,v$ gives $a+tb=0,\\ ta+b=0$."
+            },
+            {
+              "zh": "代入 $a=-tb$，得 $(1-t^2)b=0$。当 $t\\ne\\pm1$ 时必有 $a=b=0$；当 $t=1$ 时两向量相等，当 $t=-1$ 时它们互为相反向量。",
+              "en": "Substituting $a=-tb$ gives $(1-t^2)b=0$. When $t\\ne\\pm1$ both coefficients must vanish. At $t=1$ the vectors coincide, and at $t=-1$ they are negatives."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "仅 $t=0$",
+          "en": "Only $t=0$"
+        },
+        {
+          "id": "b",
+          "zh": "仅 $t=1$",
+          "en": "Only $t=1$"
+        },
+        {
+          "id": "c",
+          "zh": "$t\\in\\{-1,1\\}$",
+          "en": "$t\\in\\{-1,1\\}$"
+        },
+        {
+          "id": "d",
+          "zh": "所有实数",
+          "en": "Every real number"
+        }
+      ],
+      "related": [
+        "028-q07",
+        "028-q08"
+      ]
+    },
+    {
+      "id": "028-q33",
+      "course": "028",
+      "topic": "028-maps",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "图像坐标先经水平错切 $S(x,y)=(x+2y,y)$，再经交换坐标的变换 $R(x,y)=(y,x)$。哪个矩阵能一次完成这两步？",
+        "en": "A display shears coordinates by $S(x,y)=(x+2y,y)$, then swaps them using $R(x,y)=(y,x)$. Which single matrix implements both steps?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "按实际顺序，$R(S(x,y))=(y,x+2y)$。",
+              "en": "In the stated order, $R(S(x,y))=(y,x+2y)$."
+            },
+            {
+              "zh": "标准基向量的像分别为 $(0,1)$、$(1,2)$。将其作为列得 $\\begin{bmatrix}0&1\\\\1&2\\end{bmatrix}$。",
+              "en": "The images of the standard basis vectors are $(0,1)$ and $(1,2)$. These are the columns of $\\begin{bmatrix}0&1\\\\1&2\\end{bmatrix}$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\begin{bmatrix}2&1\\\\1&0\\end{bmatrix}$",
+          "en": "$\\begin{bmatrix}2&1\\\\1&0\\end{bmatrix}$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$",
+          "en": "$\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$",
+          "en": "$\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\begin{bmatrix}0&1\\\\1&2\\end{bmatrix}$",
+          "en": "$\\begin{bmatrix}0&1\\\\1&2\\end{bmatrix}$"
+        }
+      ],
+      "related": [
+        "028-q10",
+        "028-q11"
+      ]
+    },
+    {
+      "id": "028-q34",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "某 $2\\times2$ 矩阵 $A$ 有特征值 $-2,3$。对 $B=A^2-A$，哪个说法正确？",
+        "en": "A $2\\times2$ matrix $A$ has eigenvalues $-2,3$. Which claim about $B=A^2-A$ is correct?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "若 $Av=\\lambda v$，则 $Bv=(\\lambda^2-\\lambda)v$。两个特征值都给出 $6$。",
+              "en": "If $Av=\\lambda v$, then $Bv=(\\lambda^2-\\lambda)v$. Both eigenvalues give $6$."
+            },
+            {
+              "zh": "不同特征值对应的特征向量线性无关，构成整个二维空间的一组基。$B$ 将这组基的每个向量乘以 6，因此对所有向量有 $Bx=6x$。",
+              "en": "Eigenvectors for the two distinct eigenvalues form a basis of the plane. Since $B$ multiplies each basis vector by 6, it acts as multiplication by 6 on every vector."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$B=6I$",
+          "en": "$B=6I$"
+        },
+        {
+          "id": "b",
+          "zh": "$B$ 的特征值为 $4,9$",
+          "en": "$B$ has eigenvalues $4,9$"
+        },
+        {
+          "id": "c",
+          "zh": "$B$ 的零空间维数为 1",
+          "en": "$B$ has nullity one"
+        },
+        {
+          "id": "d",
+          "zh": "$B$ 只有一个线性无关的特征向量",
+          "en": "$B$ has only one independent eigenvector"
+        }
+      ],
+      "related": [
+        "028-q26",
+        "028-q27"
+      ]
+    },
+    {
+      "id": "028-q35",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "对于 $A_t=\\begin{bmatrix}2&t&1\\\\0&2&0\\\\0&0&5\\end{bmatrix}$，哪些实数 $t$ 使其可对角化？",
+        "en": "For which real $t$ is $A_t=\\begin{bmatrix}2&t&1\\\\0&2&0\\\\0&0&5\\end{bmatrix}$ diagonalizable?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "三角矩阵的特征值为 2（重数 2）和 5（重数 1）。解 $(A_t-2I)v=0$ 得 $z=0,\\ ty=0$，而 $x$ 自由。",
+              "en": "The triangular matrix has eigenvalues 2 (multiplicity two) and 5 (multiplicity one). Solving $(A_t-2I)v=0$ gives $z=0,\\ ty=0$, with $x$ free."
+            },
+            {
+              "zh": "当 $t=0$ 时，特征值 2 有二维特征空间，否则只有一维。特征值 5 的特征空间由 $(1,0,3)$ 张成。因此仅 $t=0$ 时有三个线性无关的特征向量。",
+              "en": "The eigenspace for 2 has dimension two if $t=0$ and one otherwise. The eigenspace for 5 is spanned by $(1,0,3)$. Thus only $t=0$ yields three independent eigenvectors."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "所有实数",
+          "en": "Every real number"
+        },
+        {
+          "id": "b",
+          "zh": "仅 $t=0$",
+          "en": "Only $t=0$"
+        },
+        {
+          "id": "c",
+          "zh": "所有 $t\\ne0$",
+          "en": "All $t\\ne0$"
+        },
+        {
+          "id": "d",
+          "zh": "无实数解",
+          "en": "No real value"
+        }
+      ],
+      "related": [
+        "028-q30",
+        "028-q31"
+      ]
+    }
+  ]
+}

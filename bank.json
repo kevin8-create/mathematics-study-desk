@@ -1,0 +1,3606 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "id": "026-functions",
+      "course": "026",
+      "zh": "函数与反函数",
+      "en": "Functions and inverses",
+      "summaryZh": "检查定义域，再处理复合、反函数与反三角函数的主值。",
+      "summaryEn": "Check the domain first, then handle composition, inverses, and inverse trig principal values.",
+      "terms": [
+        {
+          "zh": "定义域",
+          "en": "domain"
+        },
+        {
+          "zh": "值域",
+          "en": "range"
+        },
+        {
+          "zh": "复合函数",
+          "en": "composite function"
+        },
+        {
+          "zh": "主值",
+          "en": "principal value"
+        }
+      ]
+    },
+    {
+      "id": "026-limits",
+      "course": "026",
+      "zh": "极限",
+      "en": "Limits",
+      "summaryZh": "区分单侧极限、无穷远极限和无穷极限。优先尝试因式分解、有理化、夹逼或基本极限。",
+      "summaryEn": "Distinguish one-sided limits, limits at infinity, and infinite limits. Try factoring, rationalization, squeezing, or a standard limit.",
+      "terms": [
+        {
+          "zh": "单侧极限",
+          "en": "one-sided limit"
+        },
+        {
+          "zh": "夹逼定理",
+          "en": "squeeze theorem"
+        },
+        {
+          "zh": "渐近线",
+          "en": "asymptote"
+        },
+        {
+          "zh": "未定式",
+          "en": "indeterminate form"
+        }
+      ]
+    },
+    {
+      "id": "026-continuity",
+      "course": "026",
+      "zh": "连续性",
+      "en": "Continuity",
+      "summaryZh": "在指定点比较两侧极限和函数值。使用介值定理时注明闭区间连续性。",
+      "summaryEn": "Compare both one-sided limits with the function value. State continuity on the closed interval when applying the intermediate value theorem.",
+      "terms": [
+        {
+          "zh": "连续",
+          "en": "continuous"
+        },
+        {
+          "zh": "可去间断点",
+          "en": "removable discontinuity"
+        },
+        {
+          "zh": "介值定理",
+          "en": "intermediate value theorem"
+        }
+      ]
+    },
+    {
+      "id": "026-derivative",
+      "course": "026",
+      "zh": "导数与求导法则",
+      "en": "Derivatives and differentiation rules",
+      "summaryZh": "掌握差商、乘积、商、链式法则及隐函数、对数和反三角函数求导。",
+      "summaryEn": "Use difference quotients, product, quotient, and chain rules, including implicit, logarithmic, and inverse trigonometric differentiation.",
+      "terms": [
+        {
+          "zh": "差商",
+          "en": "difference quotient"
+        },
+        {
+          "zh": "切线",
+          "en": "tangent line"
+        },
+        {
+          "zh": "链式法则",
+          "en": "chain rule"
+        },
+        {
+          "zh": "隐函数求导",
+          "en": "implicit differentiation"
+        }
+      ]
+    },
+    {
+      "id": "026-rates",
+      "course": "026",
+      "zh": "相关变化率",
+      "en": "Related rates",
+      "summaryZh": "先建立变量关系，对时间求导，最后代入该时刻的数值。",
+      "summaryEn": "Relate the variables, differentiate with respect to time, and then substitute the instantaneous values.",
+      "terms": [
+        {
+          "zh": "相关变化率",
+          "en": "related rates"
+        },
+        {
+          "zh": "瞬时速度",
+          "en": "instantaneous velocity"
+        },
+        {
+          "zh": "恒等式",
+          "en": "identity"
+        }
+      ]
+    },
+    {
+      "id": "026-applications",
+      "course": "026",
+      "zh": "导数应用",
+      "en": "Applications of derivatives",
+      "summaryZh": "用端点和临界点判定最值，用导数符号判定单调性与凹凸性，核对中值定理和洛必达法则的条件。",
+      "summaryEn": "Check endpoints and critical points for extrema, use derivative signs for monotonicity and concavity, and verify hypotheses before using the mean value theorem or L’Hôpital’s rule.",
+      "terms": [
+        {
+          "zh": "临界点",
+          "en": "critical point"
+        },
+        {
+          "zh": "拐点",
+          "en": "inflection point"
+        },
+        {
+          "zh": "极值",
+          "en": "extremum"
+        },
+        {
+          "zh": "中值定理",
+          "en": "mean value theorem"
+        }
+      ]
+    },
+    {
+      "id": "026-integral",
+      "course": "026",
+      "zh": "定积分与微积分基本定理",
+      "en": "Definite integrals and the FTC",
+      "summaryZh": "区别带符号积分与几何面积。变上限积分求导时同时注意积分上限的内层导数。",
+      "summaryEn": "Distinguish signed integrals from geometric area. For a variable upper limit, account for its derivative.",
+      "terms": [
+        {
+          "zh": "黎曼和",
+          "en": "Riemann sum"
+        },
+        {
+          "zh": "定积分",
+          "en": "definite integral"
+        },
+        {
+          "zh": "微积分基本定理",
+          "en": "fundamental theorem of calculus"
+        }
+      ]
+    },
+    {
+      "id": "026-techniques",
+      "course": "026",
+      "zh": "换元与分部积分",
+      "en": "Substitution and integration by parts",
+      "summaryZh": "识别复合结构或乘积结构，选择换元或分部积分。换元时同步处理积分限。",
+      "summaryEn": "Recognize composite or product structure and choose substitution or integration by parts. Transform bounds with the variable.",
+      "terms": [
+        {
+          "zh": "原函数",
+          "en": "antiderivative"
+        },
+        {
+          "zh": "换元积分法",
+          "en": "substitution"
+        },
+        {
+          "zh": "分部积分法",
+          "en": "integration by parts"
+        }
+      ]
+    },
+    {
+      "id": "028-systems",
+      "course": "028",
+      "zh": "线性方程组与消元",
+      "en": "Systems and elimination",
+      "summaryZh": "用主元和增广列判断解的结构。",
+      "summaryEn": "Read pivots and the augmented column to classify solutions.",
+      "terms": [
+        {
+          "zh": "主元",
+          "en": "pivot"
+        },
+        {
+          "zh": "行阶梯形",
+          "en": "row echelon form"
+        }
+      ]
+    },
+    {
+      "id": "028-vectors",
+      "course": "028",
+      "zh": "向量方程与线性无关",
+      "en": "Vector equations and independence",
+      "summaryZh": "在向量、矩阵和齐次方程之间转换。",
+      "summaryEn": "Connect vector combinations, matrix equations and homogeneous systems.",
+      "terms": [
+        {
+          "zh": "张成",
+          "en": "span"
+        },
+        {
+          "zh": "线性无关",
+          "en": "linear independence"
+        }
+      ]
+    },
+    {
+      "id": "028-maps",
+      "course": "028",
+      "zh": "线性变换",
+      "en": "Linear transformations",
+      "summaryZh": "用标准基的像构造变换矩阵。",
+      "summaryEn": "Build the standard matrix from the images of basis vectors.",
+      "terms": [
+        {
+          "zh": "标准矩阵",
+          "en": "standard matrix"
+        },
+        {
+          "zh": "像",
+          "en": "image"
+        }
+      ]
+    },
+    {
+      "id": "028-matrices",
+      "course": "028",
+      "zh": "矩阵运算与可逆性",
+      "en": "Matrix operations and invertibility",
+      "summaryZh": "检查乘积的顺序，并用逆矩阵或主元判断可逆性。",
+      "summaryEn": "Track product order and test invertibility using inverses or pivots.",
+      "terms": [
+        {
+          "zh": "逆矩阵",
+          "en": "inverse matrix"
+        },
+        {
+          "zh": "单位矩阵",
+          "en": "identity matrix"
+        }
+      ]
+    },
+    {
+      "id": "028-spaces",
+      "course": "028",
+      "zh": "子空间、维数与秩",
+      "en": "Subspaces, dimension and rank",
+      "summaryZh": "从主元列和自由变量找出基与维数。",
+      "summaryEn": "Use pivot columns and free variables to find bases and dimensions.",
+      "terms": [
+        {
+          "zh": "零空间",
+          "en": "null space"
+        },
+        {
+          "zh": "列空间",
+          "en": "column space"
+        },
+        {
+          "zh": "秩",
+          "en": "rank"
+        }
+      ]
+    },
+    {
+      "id": "028-dets",
+      "course": "028",
+      "zh": "行列式",
+      "en": "Determinants",
+      "summaryZh": "结合余子式展开和行运算计算行列式。",
+      "summaryEn": "Compute determinants by cofactor expansion and row operations.",
+      "terms": [
+        {
+          "zh": "余子式",
+          "en": "minor"
+        },
+        {
+          "zh": "代数余子式",
+          "en": "cofactor"
+        }
+      ]
+    },
+    {
+      "id": "028-eigen",
+      "course": "028",
+      "zh": "特征值与特征向量",
+      "en": "Eigenvalues and eigenvectors",
+      "summaryZh": "解特征方程并描述相应特征空间。",
+      "summaryEn": "Solve characteristic equations and describe the associated eigenspaces.",
+      "terms": [
+        {
+          "zh": "特征空间",
+          "en": "eigenspace"
+        },
+        {
+          "zh": "特征方程",
+          "en": "characteristic equation"
+        }
+      ]
+    },
+    {
+      "id": "028-diag",
+      "course": "028",
+      "zh": "对角化",
+      "en": "Diagonalization",
+      "summaryZh": "用一组线性无关的特征向量构造相似分解。",
+      "summaryEn": "Construct a similarity decomposition from independent eigenvectors.",
+      "terms": [
+        {
+          "zh": "对角化",
+          "en": "diagonalization"
+        },
+        {
+          "zh": "特征基",
+          "en": "eigenbasis"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "026-001",
+      "topic": "026-functions",
+      "course": "026",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "求函数 $f(x)=\\ln(5-2x)$ 的定义域。",
+        "en": "Find the domain of $f(x)=\\ln(5-2x)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "实对数的真数必须为正。解 $5-2x>0$ 得 $x<\\frac52$。",
+              "en": "The real logarithm requires a positive argument. Solving $5-2x>0$ gives $x<\\frac52$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$x> \\frac52$",
+          "en": "$x> \\frac52$"
+        },
+        {
+          "id": "b",
+          "zh": "$x<\\frac52$",
+          "en": "$x<\\frac52$"
+        },
+        {
+          "id": "c",
+          "zh": "$x\\le\\frac52$",
+          "en": "$x\\le\\frac52$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\mathbb R$",
+          "en": "$\\mathbb R$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-028",
+        "026-002"
+      ]
+    },
+    {
+      "id": "026-002",
+      "topic": "026-functions",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\arcsin(\\sin(\\frac{5\\pi}{6}))$。",
+        "en": "Evaluate $\\arcsin(\\sin(\\frac{5\\pi}{6}))$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "原正弦值是 $\\frac12$。$\\arcsin$ 的值域是 $[-\\frac{\\pi}{2},\\frac{\\pi}{2}]$，该区间里正弦为 $\\frac12$ 的角只有 $\\frac{\\pi}{6}$。",
+              "en": "The inner sine equals $\\frac12$. In the principal range $[-\\frac{\\pi}{2},\\frac{\\pi}{2}]$, the only angle with sine $\\frac12$ is $\\frac{\\pi}{6}$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac{5\\pi}{6}$",
+          "en": "$\\frac{5\\pi}{6}$"
+        },
+        {
+          "id": "b",
+          "zh": "$-\\frac{\\pi}{6}$",
+          "en": "$-\\frac{\\pi}{6}$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\frac{\\pi}{6}$",
+          "en": "$\\frac{\\pi}{6}$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\frac{\\pi}{3}$",
+          "en": "$\\frac{\\pi}{3}$"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-028",
+        "026-003"
+      ]
+    },
+    {
+      "id": "026-003",
+      "topic": "026-functions",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "若 $f(x)=\\sqrt{x+4}$，$g(x)=3-x^2$，求 $(f\\circ g)$ 的定义域。",
+        "en": "If $f(x)=\\sqrt{x+4}$ and $g(x)=3-x^2$, find the domain of $(f\\circ g)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "先复合得到 $\\sqrt{7-x^2}$，要求 $x^2\\le7$，等号处平方根仍有定义。",
+              "en": "Composition gives $\\sqrt{7-x^2}$. Require $x^2\\le7$ and include equality because the square root is defined at zero."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$[-\\sqrt 7,\\sqrt 7]$",
+          "en": "$[-\\sqrt 7,\\sqrt 7]$"
+        },
+        {
+          "id": "b",
+          "zh": "$[-\\sqrt 3,\\sqrt 3]$",
+          "en": "$[-\\sqrt 3,\\sqrt 3]$"
+        },
+        {
+          "id": "c",
+          "zh": "$[0,7]$",
+          "en": "$[0,7]$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\mathbb R$",
+          "en": "$\\mathbb R$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-028",
+        "026-002"
+      ]
+    },
+    {
+      "id": "026-004",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to4}\\frac{x^2-16}{x-4}$。",
+        "en": "Find $\\displaystyle\\lim_{x\\to4}\\frac{x^2-16}{x-4}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "当 $x\\ne4$ 时，分解并约去因子 $x-4$ 得 $x+4$，故极限为 $8$。",
+              "en": "For $x\\ne4$, factor and cancel $x-4$ to get $x+4$, whose limit is $8$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "原差商是 $h(x)=x^2$ 在 $4$ 处的导数定义，因此值为 $2\\cdot4=8$。",
+              "en": "The quotient is the derivative definition for $h(x)=x^2$ at $4$, so it equals $2\\cdot4=8$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$0$",
+          "en": "$0$"
+        },
+        {
+          "id": "b",
+          "zh": "$4$",
+          "en": "$4$"
+        },
+        {
+          "id": "c",
+          "zh": "$16$",
+          "en": "$16$"
+        },
+        {
+          "id": "d",
+          "zh": "$8$",
+          "en": "$8$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-029",
+        "026-035"
+      ]
+    },
+    {
+      "id": "026-005",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to0}\\frac{\\sin(5x)}{\\tan(2x)}$。",
+        "en": "Find $\\displaystyle\\lim_{x\\to0}\\frac{\\sin(5x)}{\\tan(2x)}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "把商写成 $\\frac52\\frac{\\sin(5x)}{5x}\\frac{2x}{\\sin(2x)}\\cos(2x)$，三个随 $x$ 变化的因子都趋于 $1$。",
+              "en": "Rewrite as $\\frac52\\frac{\\sin(5x)}{5x}\\frac{2x}{\\sin(2x)}\\cos(2x)$. Each variable factor tends to $1$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "分子分母同趋于 $0$，且 $(\\tan(2x))^{\\prime}$ 在附近不为零。洛必达法则给出 $\\lim_{x\\to0}\\frac{5\\cos(5x)}{2\\sec^2(2x)}=\\frac52$。",
+              "en": "Both terms tend to zero and $(\\tan(2x))^{\\prime}$ is nonzero nearby. L’Hôpital’s rule gives $\\lim_{x\\to0}\\frac{5\\cos(5x)}{2\\sec^2(2x)}=\\frac52$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac25$",
+          "en": "$\\frac25$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac52$",
+          "en": "$\\frac52$"
+        },
+        {
+          "id": "c",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "d",
+          "zh": "$0$",
+          "en": "$0$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-035",
+        "026-025"
+      ]
+    },
+    {
+      "id": "026-006",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to-\\infty}\\left(\\sqrt{x^2-6x}+x\\right)$。",
+        "en": "Find $\\displaystyle\\lim_{x\\to-\\infty}\\left(\\sqrt{x^2-6x}+x\\right)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "有理化得 $\\frac{-6x}{\\sqrt{x^2-6x}-x}$。当 $x<0$，以 $-x$ 除分子分母，得到 $\\frac{6}{\\sqrt{1-\\frac6x}+1}\\to3$。",
+              "en": "Rationalization gives $\\frac{-6x}{\\sqrt{x^2-6x}-x}$. For $x<0$, divide by $-x$ to get $\\frac{6}{\\sqrt{1-\\frac6x}+1}\\to3$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$-3$",
+          "en": "$-3$"
+        },
+        {
+          "id": "b",
+          "zh": "$0$",
+          "en": "$0$"
+        },
+        {
+          "id": "c",
+          "zh": "$3$",
+          "en": "$3$"
+        },
+        {
+          "id": "d",
+          "zh": "$+\\infty$",
+          "en": "$+\\infty$"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-025",
+        "026-035"
+      ]
+    },
+    {
+      "id": "026-007",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to0}(1+3x)^{\\frac{2}{x}}$。",
+        "en": "Evaluate $\\displaystyle\\lim_{x\\to0}(1+3x)^{\\frac{2}{x}}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "在零附近底数为正。设 $u=3x$，则原式为 $((1+u)^{\\frac{1}{u}})^6$，利用基本极限得 $e^6$。",
+              "en": "The base is positive near zero. With $u=3x$, the expression is $((1+u)^{\\frac{1}{u}})^6$, which tends to $e^6$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$e^3$",
+          "en": "$e^3$"
+        },
+        {
+          "id": "b",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "c",
+          "zh": "$e^2$",
+          "en": "$e^2$"
+        },
+        {
+          "id": "d",
+          "zh": "$e^6$",
+          "en": "$e^6$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-035",
+        "026-025"
+      ]
+    },
+    {
+      "id": "026-008",
+      "topic": "026-continuity",
+      "course": "026",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "设 $f(x)=x^2-1$（$x<2$），$f(x)=ax+1$（$x\\ge2$）。何值使 $f$ 在 $2$ 连续？",
+        "en": "Let $f(x)=x^2-1$ for $x<2$ and $f(x)=ax+1$ for $x\\ge2$. Which value makes $f$ continuous at $2$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "左极限为 $3$，右极限及函数值均为 $2a+1$。解 $2a+1=3$ 得 $a=1$。",
+              "en": "The left limit is $3$. The right limit and function value are $2a+1$. Solving $2a+1=3$ gives $a=1$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "b",
+          "zh": "$2$",
+          "en": "$2$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\frac32$",
+          "en": "$\\frac32$"
+        },
+        {
+          "id": "d",
+          "zh": "$-1$",
+          "en": "$-1$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-034",
+        "026-021"
+      ]
+    },
+    {
+      "id": "026-009",
+      "topic": "026-continuity",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "$f$ 在 $[0,2]$ 连续且 $f(0)=-1,f(2)=4$。以下哪项必然成立？",
+        "en": "$f$ is continuous on $[0,2]$ with $f(0)=-1,f(2)=4$. Which statement must hold?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "零介于两个端点函数值之间；由介值定理存在 $c\\in(0,2)$ 使 $f(c)=0$。",
+              "en": "Zero lies between the two endpoint values. The intermediate value theorem gives a $c\\in(0,2)$ such that $f(c)=0$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$f$ 必单调 ",
+          "en": " $f$ is monotone"
+        },
+        {
+          "id": "b",
+          "zh": "$f$ 恰有一个零点 ",
+          "en": " $f$ has exactly one zero"
+        },
+        {
+          "id": "c",
+          "zh": "$f$ 在开区间有零点 ",
+          "en": " $f$ has a zero in the open interval"
+        },
+        {
+          "id": "d",
+          "zh": "$f$ 处处可导 ",
+          "en": " $f$ is differentiable everywhere"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-021",
+        "026-034"
+      ]
+    },
+    {
+      "id": "026-010",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "若 $f(x)=\\cos(3x^2)$，求 $f^{\\prime}(x)$。",
+        "en": "If $f(x)=\\cos(3x^2)$, find $f^{\\prime}(x)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "外层余弦求导得到 $-\\sin(3x^2)$，再乘内层导数 $6x$。",
+              "en": "Differentiating the outer cosine gives $-\\sin(3x^2)$. Multiply by the inner derivative $6x$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$6x\\sin(3x^2)$",
+          "en": "$6x\\sin(3x^2)$"
+        },
+        {
+          "id": "b",
+          "zh": "$-6x\\sin(3x^2)$",
+          "en": "$-6x\\sin(3x^2)$"
+        },
+        {
+          "id": "c",
+          "zh": "$-\\sin(3x^2)$",
+          "en": "$-\\sin(3x^2)$"
+        },
+        {
+          "id": "d",
+          "zh": "$-3x^2\\sin(3x^2)$",
+          "en": "$-3x^2\\sin(3x^2)$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-024",
+        "026-011"
+      ]
+    },
+    {
+      "id": "026-011",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "曲线 $x^2+xy+y^2=7$ 在 $(1,2)$ 处的切线斜率是多少？",
+        "en": "What is the tangent slope to $x^2+xy+y^2=7$ at $(1,2)$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "隐式求导得 $2x+y+(x+2y)y^{\\prime}=0$。在 $(1,2)$ 有 $x+2y=5\\ne0$，故斜率为 $-\\frac45$。",
+              "en": "Implicit differentiation yields $2x+y+(x+2y)y^{\\prime}=0$. At $(1,2)$, the coefficient $x+2y=5\\ne0$, and the slope is $-\\frac45$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$-\\frac54$",
+          "en": "$-\\frac54$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac45$",
+          "en": "$\\frac45$"
+        },
+        {
+          "id": "c",
+          "zh": "$-\\frac25$",
+          "en": "$-\\frac25$"
+        },
+        {
+          "id": "d",
+          "zh": "$-\\frac45$",
+          "en": "$-\\frac45$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-024",
+        "026-012"
+      ]
+    },
+    {
+      "id": "026-012",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "若 $f(x)=x^x$（$x>0$），求 $f^{\\prime}(2)$。",
+        "en": "For $f(x)=x^x$ with $x>0$, find $f^{\\prime}(2)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "由 $\\ln f=x\\ln x$ 得 $\\frac{f^{\\prime}}{f}=\\ln x+1$，所以 $f^{\\prime}(2)=4(1+\\ln 2)$。",
+              "en": "From $\\ln f=x\\ln x$ we get $\\frac{f^{\\prime}}{f}=\\ln x+1$, hence $f^{\\prime}(2)=4(1+\\ln 2)$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "写成 $e^{x\\ln x}$，再对指数应用乘积法则及链式法则。",
+              "en": "Write the function as $e^{x\\ln x}$, then apply the product rule to the exponent and the chain rule."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$4(1+\\ln 2)$",
+          "en": "$4(1+\\ln 2)$"
+        },
+        {
+          "id": "b",
+          "zh": "$4\\ln 2$",
+          "en": "$4\\ln 2$"
+        },
+        {
+          "id": "c",
+          "zh": "$4$",
+          "en": "$4$"
+        },
+        {
+          "id": "d",
+          "zh": "$2(1+\\ln 2)$",
+          "en": "$2(1+\\ln 2)$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-024",
+        "026-011"
+      ]
+    },
+    {
+      "id": "026-013",
+      "topic": "026-rates",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "一个圆的半径以 $3$ 米每秒增长。半径为 $4$ 米时，面积变化率是多少平方米每秒？",
+        "en": "A circle’s radius grows at $3$ metres per second. How fast is its area growing, in square metres per second, when its radius is $4$ metres?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "从 $A=\\pi r^2$ 得 $\\frac{\\mathrm dA}{\\mathrm dt}=2\\pi r\\frac{\\mathrm dr}{\\mathrm dt}=2\\pi(4)(3)=24\\pi$。",
+              "en": "Differentiate $A=\\pi r^2$ to obtain $\\frac{\\mathrm dA}{\\mathrm dt}=2\\pi r\\frac{\\mathrm dr}{\\mathrm dt}=2\\pi(4)(3)=24\\pi$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$12\\pi$",
+          "en": "$12\\pi$"
+        },
+        {
+          "id": "b",
+          "zh": "$24\\pi$",
+          "en": "$24\\pi$"
+        },
+        {
+          "id": "c",
+          "zh": "$8\\pi$",
+          "en": "$8\\pi$"
+        },
+        {
+          "id": "d",
+          "zh": "$48\\pi$",
+          "en": "$48\\pi$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-026"
+      ]
+    },
+    {
+      "id": "026-014",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $f(x)=x^3-3x$ 在 $[0,3]$ 的绝对最小值。",
+        "en": "Find the absolute minimum value of $f(x)=x^3-3x$ on $[0,3]$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "$f^{\\prime}(x)=3x^2-3$，内部唯一临界点是 $1$。端点和临界点函数值为 $0,-2,18$，故最小值为 $-2$。",
+              "en": "The derivative is $3x^2-3$, so $1$ is the only interior critical point. The three candidate values are $0,-2,18$, yielding $-2$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$-3$",
+          "en": "$-3$"
+        },
+        {
+          "id": "b",
+          "zh": "$0$",
+          "en": "$0$"
+        },
+        {
+          "id": "c",
+          "zh": "$-2$",
+          "en": "$-2$"
+        },
+        {
+          "id": "d",
+          "zh": "$1$",
+          "en": "$1$"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-022",
+        "026-030"
+      ]
+    },
+    {
+      "id": "026-015",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "$f(x)=x^3$ 在 $[0,2]$ 上对应中值定理的 $c$ 是多少？",
+        "en": "Which $c$ satisfies the conclusion of the mean value theorem for $f(x)=x^3$ on $[0,2]$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "多项式在闭区间连续、开区间可导。割线斜率为 $\\frac{8-0}{2-0}=4$，解 $3c^2=4$ 并取 $c\\in(0,2)$。",
+              "en": "The polynomial is continuous on the closed interval and differentiable inside. The secant slope is $\\frac{8-0}{2-0}=4$. Solve $3c^2=4$ and retain $c\\in(0,2)$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac43$",
+          "en": "$\\frac43$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\sqrt 2$",
+          "en": "$\\sqrt 2$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\frac{2}{\\sqrt 3}$",
+          "en": "$\\frac{2}{\\sqrt 3}$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-022",
+        "026-030"
+      ]
+    },
+    {
+      "id": "026-016",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "$f(x)=x^4$ 在 $x=0$ 是否有拐点？",
+        "en": "Does $f(x)=x^4$ have an inflection point at $x=0$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "$f^{\\prime\\prime}(x)=12x^2$，在 $0$ 两侧均为正，因此两侧均向上凹，$0$ 处无拐点。",
+              "en": "Since $f^{\\prime\\prime}(x)=12x^2$ is positive on both sides of zero, the graph is concave up on both sides and has no inflection there."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "有，因为二阶导数为零",
+          "en": "Yes, because its second derivative is zero"
+        },
+        {
+          "id": "b",
+          "zh": "没有，因为凹凸性未改变",
+          "en": "No, because the concavity does not change"
+        },
+        {
+          "id": "c",
+          "zh": "有，因为一阶导数为零",
+          "en": "Yes, because its first derivative is zero"
+        },
+        {
+          "id": "d",
+          "zh": "无法判断凹凸性",
+          "en": "The concavity cannot be determined"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-022",
+        "026-030"
+      ]
+    },
+    {
+      "id": "026-017",
+      "topic": "026-integral",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "设 $F(x)=\\displaystyle\\int_2^{x^2+1}\\cos(t)\\,\\mathrm dt$。求 $F^{\\prime}(x)$。",
+        "en": "Let $F(x)=\\displaystyle\\int_2^{x^2+1}\\cos(t)\\,\\mathrm dt$. Find $F^{\\prime}(x)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "用微积分基本定理先对上限求导，再乘上限对 $x$ 的导数 $2x$。",
+              "en": "Use the fundamental theorem to differentiate with respect to the upper limit, then multiply by the upper limit’s derivative $2x$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "先积成 $F(x)=\\sin(x^2+1)-\\sin2$，再求导。",
+              "en": "First integrate to obtain $F(x)=\\sin(x^2+1)-\\sin2$, then differentiate."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\cos(x^2+1)$",
+          "en": "$\\cos(x^2+1)$"
+        },
+        {
+          "id": "b",
+          "zh": "$-\\sin(x^2+1)$",
+          "en": "$-\\sin(x^2+1)$"
+        },
+        {
+          "id": "c",
+          "zh": "$2x\\cos(x^2+1)$",
+          "en": "$2x\\cos(x^2+1)$"
+        },
+        {
+          "id": "d",
+          "zh": "$2x\\sin(x^2+1)$",
+          "en": "$2x\\sin(x^2+1)$"
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "related": [
+        "026-027",
+        "026-018"
+      ]
+    },
+    {
+      "id": "026-018",
+      "topic": "026-integral",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{1}{n}\\left(\\frac{k}{n}\\right)^2$。",
+        "en": "Evaluate $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{1}{n}\\left(\\frac{k}{n}\\right)^2$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "这是 $x^2$ 在 $[0,1]$ 上均匀分割的右端点黎曼和。该函数连续，极限为 $\\int_0^1 x^2\\,\\mathrm dx=\\frac13$。",
+              "en": "This is the right-endpoint Riemann sum for $x^2$ on $[0,1]$. Continuity gives $\\int_0^1 x^2\\,\\mathrm dx=\\frac13$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac13$",
+          "en": "$\\frac13$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac12$",
+          "en": "$\\frac12$"
+        },
+        {
+          "id": "c",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "d",
+          "zh": "$0$",
+          "en": "$0$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-027",
+        "026-017"
+      ]
+    },
+    {
+      "id": "026-019",
+      "topic": "026-techniques",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\int_0^1\\frac{4x}{1+x^2}\\,\\mathrm dx$。",
+        "en": "Evaluate $\\displaystyle\\int_0^1\\frac{4x}{1+x^2}\\,\\mathrm dx$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "设 $u=1+x^2$，$\\mathrm du=2x\\,\\mathrm dx$，上下限变为 $1,2$。因此原积分为 $2\\int_1^2\\frac1u\\,\\mathrm du=2\\ln 2$。",
+              "en": "Use $u=1+x^2$ and $\\mathrm du=2x\\,\\mathrm dx$. The bounds become $1,2$, so the integral is $2\\int_1^2\\frac1u\\,\\mathrm du=2\\ln 2$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\ln 2$",
+          "en": "$\\ln 2$"
+        },
+        {
+          "id": "b",
+          "zh": "$2$",
+          "en": "$2$"
+        },
+        {
+          "id": "c",
+          "zh": "$4\\ln 2$",
+          "en": "$4\\ln 2$"
+        },
+        {
+          "id": "d",
+          "zh": "$2\\ln 2$",
+          "en": "$2\\ln 2$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-023",
+        "026-020"
+      ]
+    },
+    {
+      "id": "026-020",
+      "topic": "026-techniques",
+      "course": "026",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\int_0^1 x e^{2x}\\,\\mathrm dx$。",
+        "en": "Evaluate $\\displaystyle\\int_0^1 x e^{2x}\\,\\mathrm dx$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "取 $u=x$，$\\mathrm dv=e^{2x}\\,\\mathrm dx$，于是 $v=\\frac12e^{2x}$。积分为 $\\left[\\frac12xe^{2x}-\\frac14e^{2x}\\right]_0^1=\\frac{e^2+1}{4}$。",
+              "en": "Take $u=x$ and $\\mathrm dv=e^{2x}\\,\\mathrm dx$, giving $v=\\frac12e^{2x}$. The integral is $\\left[\\frac12xe^{2x}-\\frac14e^{2x}\\right]_0^1=\\frac{e^2+1}{4}$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac{e^2-1}{4}$",
+          "en": "$\\frac{e^2-1}{4}$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac{e^2+1}{4}$",
+          "en": "$\\frac{e^2+1}{4}$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\frac{e^2}{2}$",
+          "en": "$\\frac{e^2}{2}$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\frac{e^2+1}{2}$",
+          "en": "$\\frac{e^2+1}{2}$"
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "related": [
+        "026-023",
+        "026-019"
+      ]
+    },
+    {
+      "id": "026-021",
+      "topic": "026-continuity",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "设 $f(x)=ax+b$（$x<1$），$f(x)=x^2+2x$（$x\\ge1$）。求 $(a,b)$ 使 $f$ 在 $1$ 可导，并说明连续性条件。",
+        "en": "Let $f(x)=ax+b$ for $x<1$ and $f(x)=x^2+2x$ for $x\\ge1$. Find $(a,b)$ for differentiability at $1$, and explain the continuity condition."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "可导必连续，故 $a+b=f(1)=3$。在这个条件下，左差商恒为 $a$。",
+              "en": "Differentiability implies continuity, so $a+b=f(1)=3$. With that condition, the left difference quotient is exactly $a$."
+            },
+            {
+              "zh": "右差商等于 $\\frac{(1+h)^2+2(1+h)-3}{h}=4+h$（$h>0$），极限为 $4$。令两侧相等得 $a=4$、$b=-1$。",
+              "en": "The right difference quotient is $\\frac{(1+h)^2+2(1+h)-3}{h}=4+h$ for $h>0$, with limit $4$. Equality gives $a=4$ and $b=-1$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-009",
+        "026-008"
+      ]
+    },
+    {
+      "id": "026-022",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "一条旧墙作为一边，其余三边用 $48$ 米围栏围矩形。求最大面积和相应边长，并证明取到全局最大值。",
+        "en": "An existing wall forms one side of a rectangle. The other three sides require $48$ metres of fencing. Find the maximum area and dimensions, and justify global maximality."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "设垂直墙的边长为 $x$ 米，则平行墙的边为 $48-2x$ 米。允许退化端点时，$x\\in[0,24]$。",
+              "en": "Let $x$ be the length perpendicular to the wall. The parallel side is $48-2x$. Including degenerate endpoints gives $x\\in[0,24]$."
+            },
+            {
+              "zh": "面积 $A(x)=48x-2x^2$，$A'(x)=48-4x$。它在 $(0,12)$ 为正，在 $(12,24)$ 为负，因此全局最大值在 $x=12$ 取得。",
+              "en": "The area is $A(x)=48x-2x^2$, with derivative $48-4x$. It is positive on $(0,12)$ and negative on $(12,24)$, so the global maximum occurs at $x=12$."
+            },
+            {
+              "zh": "此时平行墙的边长为 $24$ 米，面积为 $288$ 平方米。",
+              "en": "The parallel side is $24$ metres and the area is $288$ square metres."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "配方得 $A(x)=288-2(x-12)^2$。平方项非负，故面积不超过 $288$，且 $x=12$ 时取等。",
+              "en": "Complete the square: $A(x)=288-2(x-12)^2$. The nonnegative square shows the area cannot exceed $288$, with equality at $x=12$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-015",
+        "026-030"
+      ]
+    },
+    {
+      "id": "026-023",
+      "topic": "026-techniques",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\int_0^1 x\\ln(1+x^2)\\,\\mathrm dx$，给出完整的换元和积分步骤。",
+        "en": "Evaluate $\\displaystyle\\int_0^1 x\\ln(1+x^2)\\,\\mathrm dx$, showing the substitution and integration steps."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "令 $u=1+x^2$，则 $\\mathrm du=2x\\,\\mathrm dx$，新上下限分别为 $1,2$。原积分等于 $\\frac12\\int_1^2\\ln u\\,\\mathrm du$。",
+              "en": "Set $u=1+x^2$. Then $\\mathrm du=2x\\,\\mathrm dx$ and the new limits are $1,2$. The integral becomes $\\frac12\\int_1^2\\ln u\\,\\mathrm du$."
+            },
+            {
+              "zh": "对 $\\ln u$ 分部积分得 $u\\ln u-u$，故结果为 $\\frac12[ u\\ln u-u ]_1^2=\\ln2-\\frac12$。",
+              "en": "Integration by parts gives the antiderivative $u\\ln u-u$, yielding $\\frac12[ u\\ln u-u ]_1^2=\\ln2-\\frac12$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "直接取 $v=\\frac12(1+x^2)$ 作为 $x$ 的原函数，并对 $\\ln(1+x^2)$ 求导。分部积分后剩下 $\\int_0^1 x\\,\\mathrm dx$，故为 $\\ln2-\\frac12$。",
+              "en": "Apply integration by parts directly using $v=\\frac12(1+x^2)$ as an antiderivative of $x$ and differentiating $\\ln(1+x^2)$. The remaining integral is $\\int_0^1 x\\,\\mathrm dx$, again giving $\\ln2-\\frac12$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-020",
+        "026-019"
+      ]
+    },
+    {
+      "id": "026-024",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "判断：若 $f$ 在 $a$ 连续，则 $f$ 在 $a$ 可导。",
+        "en": "True or false: Continuity at $a$ implies differentiability at $a$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "反例为 $f(x)=|x|$，它在 $0$ 连续，但左右差商分别为 $-1$ 和 $1$，导数不存在。",
+              "en": "For a counterexample take $f(x)=|x|$. It is continuous at $0$, but the left and right difference quotients are $-1$ and $1$, so the derivative does not exist."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "related": [
+        "026-010",
+        "026-011"
+      ]
+    },
+    {
+      "id": "026-025",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "证明 $\\displaystyle\\lim_{x\\to0}x^2\\cos(\\frac{1}{x})=0$，并说明尽管余弦因子没有极限，为什么整个乘积的极限存在。",
+        "en": "Prove $\\displaystyle\\lim_{x\\to0}x^2\\cos(\\frac{1}{x})=0$ and explain why the product converges even though the cosine factor has no limit."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "当 $x\\ne0$ 时，由余弦值的界 $-1\\le\\cos(\\frac{1}{x})\\le1$，乘以 $x^2$ 得 $-x^2\\le x^2\\cos(\\frac{1}{x})\\le x^2$。",
+              "en": "For $x\\ne0$, the bound $-1\\le\\cos(\\frac{1}{x})\\le1$ multiplied by $x^2$ gives $-x^2\\le x^2\\cos(\\frac{1}{x})\\le x^2$."
+            },
+            {
+              "zh": "两个界都趋于零，夹逼定理给出所求极限。这个论证只用余弦有界，不要求它收敛。",
+              "en": "Both bounds tend to zero, so the squeeze theorem gives the limit. The argument uses boundedness of the cosine factor and does not require convergence of that factor."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-006",
+        "026-005"
+      ]
+    },
+    {
+      "id": "026-026",
+      "topic": "026-rates",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "一架长 $13$ 米的梯子靠在竖墙上。梯脚距墙 $5$ 米时，正以 $2$ 米每秒远离墙。求此刻梯顶的竖直速度，向上为正。",
+        "en": "A $13$-metre ladder leans against a vertical wall. When its foot is $5$ metres from the wall, it is moving away at $2$ metres per second. Find the signed vertical velocity of the top, with up positive."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "设水平距离为 $x$，顶端高度为 $y$，则 $x^2+y^2=169$，当前 $y=12$。",
+              "en": "Let $x$ be the horizontal distance and $y$ the top’s height. Then $x^2+y^2=169$, and the current height is $12$."
+            },
+            {
+              "zh": "对时间求导并代入：$\\frac{\\mathrm dy}{\\mathrm dt}=-\\frac{x}{y}\\frac{\\mathrm dx}{\\mathrm dt}=-\\frac{5}{6}$ 米每秒，方向朝下。",
+              "en": "Differentiate in time and substitute: $\\frac{\\mathrm dy}{\\mathrm dt}=-\\frac{x}{y}\\frac{\\mathrm dx}{\\mathrm dt}=-\\frac{5}{6}$ metres per second, directed down."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "用正根 $y=\\sqrt{169-x^2}$ 显式表示高度，在 $x=5$ 处用链式法则。",
+              "en": "Write the positive height as $y=\\sqrt{169-x^2}$ and apply the chain rule at $x=5$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-013"
+      ]
+    },
+    {
+      "id": "026-027",
+      "topic": "026-integral",
+      "course": "026",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\int_{-2}^{2}(x^3+1)\\,\\mathrm dx$，填写整数。",
+        "en": "Evaluate $\\displaystyle\\int_{-2}^{2}(x^3+1)\\,\\mathrm dx$ as an integer."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "$x^3$ 是奇函数，在对称区间上积分为 $0$。常数项 $1$ 积分为区间长度 $4$。",
+              "en": "The odd term $x^3$ integrates to zero over the symmetric interval. The constant integrates to its length, $4$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "也可用原函数 $\\frac{x^4}{4}+x$ 在两个端点求差。",
+              "en": "Alternatively evaluate the antiderivative $\\frac{x^4}{4}+x$ at the endpoints and subtract."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "4"
+      ],
+      "related": [
+        "026-017",
+        "026-018"
+      ]
+    },
+    {
+      "id": "026-028",
+      "topic": "026-functions",
+      "course": "026",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $f(x)=\\frac{x+5}{x-2}$ 的反函数及其定义域。",
+        "en": "Find the inverse of $f(x)=\\frac{x+5}{x-2}$ and state its domain."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "由 $y(x-2)=x+5$ 得 $(y-1)x=2y+5$。$y=1$ 不可能，因为它会要求 $-2=5$。",
+              "en": "From $y(x-2)=x+5$ obtain $(y-1)x=2y+5$. The value $y=1$ is impossible because it would require $-2=5$."
+            },
+            {
+              "zh": "故 $f^{-1}(t)=\\frac{2t+5}{t-1}$，定义域为 $\\mathbb R\\setminus\\{1\\}$。任取 $t\\ne1$，该公式所得值不同于 $2$，代回原函数即得 $t$。",
+              "en": "Thus $f^{-1}(t)=\\frac{2t+5}{t-1}$ with domain $\\mathbb R\\setminus\\{1\\}$. For any such $t$, the formula gives a value other than $2$, and substitution into $f$ yields $t$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-002",
+        "026-003"
+      ]
+    },
+    {
+      "id": "026-029",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "判断：若 $\\lim_{x\\to0^-}f(x)=3$ 且 $\\lim_{x\\to0^+}f(x)=3$，则 $f(0)$ 必须有定义。",
+        "en": "True or false: If $\\lim_{x\\to0^-}f(x)=3$ and $\\lim_{x\\to0^+}f(x)=3$, then $f(0)$ must be defined."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "两单侧极限相同只能推出双侧极限为 $3$。例如 $f(x)=3$ 定义在 $\\mathbb R\\setminus\\{0\\}$，双侧极限存在且 $f(0)$ 未定义。",
+              "en": "Equal one-sided limits give the two-sided limit $3$. For example, $f(x)=3$ on $\\mathbb R\\setminus\\{0\\}$ has that limit even though $f(0)$ is undefined."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "related": [
+        "026-004",
+        "026-005"
+      ]
+    },
+    {
+      "id": "026-030",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "short",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $\\displaystyle\\lim_{x\\to0}\\frac{e^{3x}-1-3x}{x^2}$。填分数或等值小数。",
+        "en": "Evaluate $\\displaystyle\\lim_{x\\to0}\\frac{e^{3x}-1-3x}{x^2}$. Enter a fraction or equivalent decimal."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "分子分母同趋于零。一次洛必达化为 $\\lim_{x\\to0}\\frac{3e^{3x}-3}{2x}$，仍为零比零。再用一次得到 $\\lim_{x\\to0}\\frac{9e^{3x}}{2}=\\frac92$。",
+              "en": "Numerator and denominator both vanish. One application of L’Hôpital gives $\\lim_{x\\to0}\\frac{3e^{3x}-3}{2x}$, again a zero-over-zero form. Applying it once more gives $\\lim_{x\\to0}\\frac{9e^{3x}}{2}=\\frac92$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "9/2",
+        "4.5",
+        "4.50"
+      ],
+      "related": [
+        "026-015",
+        "026-022"
+      ]
+    },
+    {
+      "id": "026-031",
+      "topic": "026-derivative",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "在 $|2x|<1$ 的区间，求 $g(x)=\\arcsin(2x)$ 的导数。",
+        "en": "For $|2x|<1$, find the derivative of $g(x)=\\arcsin(2x)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "对反正弦用链式法则，外层在 $2x$ 的导数为 $\\frac{1}{\\sqrt{1-4x^2}}$，内层导数是 $2$。",
+              "en": "Apply the chain rule. The derivative of arcsine at $2x$ is $\\frac{1}{\\sqrt{1-4x^2}}$, and the inner derivative is $2$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "令 $y=\\arcsin(2x)$，则 $\\sin y=2x$。由 $y\\in(-\\frac{\\pi}{2},\\frac{\\pi}{2})$ 得 $\\cos y=\\sqrt{1-4x^2}>0$，故隐式求导给出相同的结果。",
+              "en": "Let $y=\\arcsin(2x)$ so that $\\sin y=2x$. Its principal range gives $\\cos y=\\sqrt{1-4x^2}>0$. Implicit differentiation gives the same result."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac{1}{\\sqrt{1-4x^2}}$",
+          "en": "$\\frac{1}{\\sqrt{1-4x^2}}$"
+        },
+        {
+          "id": "b",
+          "zh": "$-\\frac{2}{\\sqrt{1-4x^2}}$",
+          "en": "$-\\frac{2}{\\sqrt{1-4x^2}}$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\frac{2}{1+4x^2}$",
+          "en": "$\\frac{2}{1+4x^2}$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\frac{2}{\\sqrt{1-4x^2}}$",
+          "en": "$\\frac{2}{\\sqrt{1-4x^2}}$"
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "related": [
+        "026-024",
+        "026-011"
+      ]
+    },
+    {
+      "id": "026-032",
+      "topic": "026-integral",
+      "course": "026",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "$y=x-1$ 与 $x$ 轴在 $0\\le x\\le3$ 之间围成区域。求总面积。",
+        "en": "Find the total area between $y=x-1$ and the $x$-axis for $0\\le x\\le3$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "在 $x=1$ 变号。左、右两块都是三角形，面积分别为 $\\frac12$ 与 $2$，故总面积为 $\\frac52$。",
+              "en": "The function changes sign at $x=1$. The two triangular regions have areas $\\frac12$ and $2$, giving $\\frac52$ in total."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "积分被积函数的绝对值：$\\int_0^1(1-x)\\,\\mathrm dx+\\int_1^3(x-1)\\,\\mathrm dx=\\frac52$。",
+              "en": "Integrate the absolute value: $\\int_0^1(1-x)\\,\\mathrm dx+\\int_1^3(x-1)\\,\\mathrm dx=\\frac52$."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\frac52$",
+          "en": "$\\frac52$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\frac32$",
+          "en": "$\\frac32$"
+        },
+        {
+          "id": "c",
+          "zh": "$2$",
+          "en": "$2$"
+        },
+        {
+          "id": "d",
+          "zh": "$3$",
+          "en": "$3$"
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "related": [
+        "026-027",
+        "026-017"
+      ]
+    },
+    {
+      "id": "026-033",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "判断：若函数在开区间内处处可导，且在某点取得局部最大值，则该点的导数为零。",
+        "en": "True or false: A differentiable function attaining a local maximum at an interior point has derivative zero there."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "设极大值点为 $c$。离 $c$ 充分近时 $f(c+h)-f(c)\\le0$。左差商非负而右差商非正。由于导数存在、两侧相等，公共值只能是零。",
+              "en": "Let $c$ be the point. For small $h$, $f(c+h)-f(c)\\le0$. The left difference quotients are nonnegative and the right ones nonpositive. Since their limits agree, the common value is zero."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "true"
+      ],
+      "related": [
+        "026-014",
+        "026-016"
+      ]
+    },
+    {
+      "id": "026-034",
+      "topic": "026-continuity",
+      "course": "026",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "令 $f(x)=\\frac{x^2-25}{x-5}$（$x\\ne5$）。填写 $f(5)$ 使函数连续。",
+        "en": "Let $f(x)=\\frac{x^2-25}{x-5}$ for $x\\ne5$. Enter the value of $f(5)$ that makes the function continuous."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "当 $x\\ne5$ 时约去因子 $x-5$ 得 $x+5$。在 $5$ 处的极限是 $10$，连续延拓必须取这个值。",
+              "en": "For $x\\ne5$, cancelling $x-5$ gives $x+5$. Its limit at $5$ is $10$, so this is the unique continuous extension value."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "10"
+      ],
+      "related": [
+        "026-008",
+        "026-009"
+      ]
+    },
+    {
+      "id": "026-035",
+      "topic": "026-limits",
+      "course": "026",
+      "type": "short",
+      "level": 2,
+      "prompt": {
+        "zh": "计算 $\\displaystyle\\lim_{x\\to-\\infty}\\frac{3x^2+2x-1}{1-x^2}$。填写整数。",
+        "en": "Evaluate $\\displaystyle\\lim_{x\\to-\\infty}\\frac{3x^2+2x-1}{1-x^2}$. Enter an integer."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "同除以 $x^2$，分子趋于 $3$、分母趋于 $-1$。分母极限非零，所以商趋于 $-3$。",
+              "en": "Divide both terms by $x^2$. The numerator tends to $3$ and the denominator to $-1$. Since the latter is nonzero, the quotient tends to $-3$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "-3"
+      ],
+      "related": [
+        "026-005",
+        "026-007"
+      ]
+    },
+    {
+      "id": "026-036",
+      "topic": "026-applications",
+      "course": "026",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "对 $p(x)=x^3-3x^2$，找出单调区间、局部极值及拐点，并说明各分界处的符号变化。",
+        "en": "For $p(x)=x^3-3x^2$, determine the intervals of monotonicity, local extrema, and inflection point. Justify the sign changes at the relevant boundaries."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解题步骤",
+            "en": "Worked solution"
+          },
+          "steps": [
+            {
+              "zh": "$p^{\\prime}(x)=3x(x-2)$。它在 $(-\\infty,0)$、$(2,\\infty)$ 为正，在 $(0,2)$ 为负。因此函数先增后减再增。",
+              "en": "The derivative is $p^{\\prime}(x)=3x(x-2)$. It is positive on $(-\\infty,0)$ and $(2,\\infty)$ and negative on $(0,2)$. The function therefore increases, decreases, and then increases."
+            },
+            {
+              "zh": "在 $0$ 处由增变减，局部最大值 $p(0)=0$。在 $2$ 处由减变增，局部最小值 $p(2)=-4$。",
+              "en": "At $0$ the sign changes from positive to negative, giving a local maximum $p(0)=0$. At $2$ the sign changes from negative to positive, giving a local minimum $p(2)=-4$."
+            },
+            {
+              "zh": "二阶导数 $p^{\\prime\\prime}(x)=6(x-1)$ 在 $1$ 两侧由负变正。凹凸性改变，拐点是 $(1,-2)$。",
+              "en": "The second derivative $p^{\\prime\\prime}(x)=6(x-1)$ changes from negative to positive at $1$. The change in concavity gives the inflection point $(1,-2)$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "另一种方法",
+            "en": "Alternative method"
+          },
+          "steps": [
+            {
+              "zh": "也可用二阶导数判别法确认两个临界点：$p^{\\prime\\prime}(0)=-6<0$、$p^{\\prime\\prime}(2)=6>0$。单调区间仍可由一阶导数符号得出。",
+              "en": "The second derivative test also classifies the critical points because $p^{\\prime\\prime}(0)=-6<0$ and $p^{\\prime\\prime}(2)=6>0$. The first derivative sign gives the monotonicity intervals."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "026-015",
+        "026-030"
+      ]
+    },
+    {
+      "id": "028-q01",
+      "course": "028",
+      "topic": "028-systems",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "方程 $x+y=5,\\ 2x-y=1$ 中 $x$ 等于多少？",
+        "en": "Find $x$ in $x+y=5,\\ 2x-y=1$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "相加消去 $y$，得 $3x=6$。",
+              "en": "Add the equations to eliminate $y$, giving $3x=6$."
+            },
+            {
+              "zh": "因此 $x=2$；代回得 $y=3$。",
+              "en": "Thus $x=2$, and substitution yields $y=3$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "2"
+      ],
+      "related": [
+        "028-q02",
+        "028-q03"
+      ]
+    },
+    {
+      "id": "028-q02",
+      "course": "028",
+      "topic": "028-systems",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "增广矩阵的阶梯形含有一行 $[0\\ 0\\ 0\\mid 4]$。有多少组解？",
+        "en": "An echelon form of an augmented matrix contains $[0\\ 0\\ 0\\mid 4]$. How many solutions exist?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "该行表示 $0=4$。",
+              "en": "This row asserts $0=4$."
+            },
+            {
+              "zh": "它对任何未知量都不成立，故无解。",
+              "en": "No values of the variables satisfy it, so there is no solution."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "零组",
+          "en": "None"
+        },
+        {
+          "id": "b",
+          "zh": "一组",
+          "en": "One"
+        },
+        {
+          "id": "c",
+          "zh": "无穷多组",
+          "en": "Infinitely many"
+        }
+      ],
+      "related": [
+        "028-q01",
+        "028-q03"
+      ]
+    },
+    {
+      "id": "028-q03",
+      "course": "028",
+      "topic": "028-systems",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $x+2y-z=3,\\ 2x+4y-2z=6$ 的参数解。",
+        "en": "Parametrize the solutions of $x+2y-z=3,\\ 2x+4y-2z=6$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "第二行减去第一行的两倍得零行，只有 $x$ 是主元变量。",
+              "en": "Subtract twice row one from row two to obtain a zero row. Only $x$ is a pivot variable."
+            },
+            {
+              "zh": "令 $y=s,z=t$，则 $(x,y,z)=(3-2s+t,s,t)$，其中 $s,t\\in\\mathbb R$。",
+              "en": "Set $y=s,z=t$. Then $(x,y,z)=(3-2s+t,s,t)$ for $s,t\\in\\mathbb R$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q01",
+        "028-q02"
+      ]
+    },
+    {
+      "id": "028-q04",
+      "course": "028",
+      "topic": "028-systems",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "根据 $k$ 分类讨论 $x+y=2,\\ 2x+ky=5$ 的解。",
+        "en": "Classify the solutions to $x+y=2,\\ 2x+ky=5$ for all real $k$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "第二行减去第一行的两倍得 $(k-2)y=1$。",
+              "en": "Subtract twice the first equation from the second to obtain $(k-2)y=1$."
+            },
+            {
+              "zh": "若 $k=2$，得到矛盾。若 $k\\ne2$，有唯一解 $y=\\frac1{k-2},\\ x=2-\\frac1{k-2}$。",
+              "en": "For $k=2$ this is inconsistent. Otherwise the unique solution is $y=\\frac1{k-2},\\ x=2-\\frac1{k-2}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q01",
+        "028-q02"
+      ]
+    },
+    {
+      "id": "028-q05",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "若 $(5,1)=a(1,1)+b(1,-1)$，求 $a$。",
+        "en": "Given $(5,1)=a(1,1)+b(1,-1)$, find $a$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "比较坐标得 $a+b=5$ 和 $a-b=1$。",
+              "en": "Compare coordinates to get $a+b=5$ and $a-b=1$."
+            },
+            {
+              "zh": "相加得 $2a=6$，所以 $a=3$。",
+              "en": "Adding yields $2a=6$, so $a=3$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "3"
+      ],
+      "related": [
+        "028-q06",
+        "028-q07"
+      ]
+    },
+    {
+      "id": "028-q06",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "每个齐次线性方程组都有零解。",
+        "en": "Every homogeneous linear system has the zero solution."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "齐次方程的矩阵形式为 $Ax=0$。",
+              "en": "A homogeneous system has the form $Ax=0$."
+            },
+            {
+              "zh": "令 $x=0$ 即满足等式，无论是否有自由变量。",
+              "en": "Taking $x=0$ satisfies it regardless of whether free variables exist."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "true"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q05",
+        "028-q07"
+      ]
+    },
+    {
+      "id": "028-q07",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "用一个非零系数组合判断 $(1,0,1),(0,1,1),(2,3,5)$ 是否线性无关。",
+        "en": "Use a nontrivial coefficient relation to test independence of $(1,0,1),(0,1,1),(2,3,5)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "记向量依次为 $u,v,w$。计算 $2u+3v=(2,3,5)=w$。",
+              "en": "Write the vectors as $u,v,w$. Compute $2u+3v=(2,3,5)=w$."
+            },
+            {
+              "zh": "故 $2u+3v-w=0$，系数非全零，向量组线性相关。",
+              "en": "Hence $2u+3v-w=0$ with nonzero coefficients, proving dependence."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q05",
+        "028-q06",
+        "028-q32"
+      ]
+    },
+    {
+      "id": "028-q08",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "两种套餐各含 $(2,1)$ 和 $(1,3)$ 份甲乙原料。写出矩阵方程，求刚好使用 $(9,12)$ 份原料时两种套餐的数量。",
+        "en": "Two kits consume $(2,1)$ and $(1,3)$ units of two supplies. Write a matrix equation and find the kit counts that use exactly $(9,12)$ units."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "将每种套餐的用量作为列，得到 $\\begin{bmatrix}2&1\\\\1&3\\end{bmatrix}\\binom{x}{y}=\\binom9{12}$。",
+              "en": "Use each kit recipe as a column: $\\begin{bmatrix}2&1\\\\1&3\\end{bmatrix}\\binom{x}{y}=\\binom9{12}$."
+            },
+            {
+              "zh": "由 $y=9-2x$ 代入 $x+3y=12$ 得 $x=3$，故 $y=3$。",
+              "en": "Substitute $y=9-2x$ into $x+3y=12$ to find $x=3$, then $y=3$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q05",
+        "028-q06",
+        "028-q32"
+      ]
+    },
+    {
+      "id": "028-q09",
+      "course": "028",
+      "topic": "028-maps",
+      "type": "true-false",
+      "level": 1,
+      "prompt": {
+        "zh": "映射 $T(x,y)=(x+2,y)$ 是线性变换。",
+        "en": "The map $T(x,y)=(x+2,y)$ is linear."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "线性映射必须将零向量映为零。",
+              "en": "A linear map must send zero to zero."
+            },
+            {
+              "zh": "这里 $T(0,0)=(2,0)$，违反此条件。",
+              "en": "Here $T(0,0)=(2,0)$, violating that requirement."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q10",
+        "028-q11"
+      ]
+    },
+    {
+      "id": "028-q10",
+      "course": "028",
+      "topic": "028-maps",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "线性变换满足 $T(1,0)=(2,-1),T(0,1)=(3,4)$。求标准矩阵与 $T(2,-1)$。",
+        "en": "A linear map satisfies $T(1,0)=(2,-1),T(0,1)=(3,4)$. Find its standard matrix and $T(2,-1)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "把基向量的像依次作为列，得 $A=\\begin{bmatrix}2&3\\\\-1&4\\end{bmatrix}$。",
+              "en": "Place the basis images into columns to form $A=\\begin{bmatrix}2&3\\\\-1&4\\end{bmatrix}$."
+            },
+            {
+              "zh": "按线性性，$T(2,-1)=2(2,-1)-(3,4)=(1,-6)$。",
+              "en": "Linearity gives $T(2,-1)=2(2,-1)-(3,4)=(1,-6)$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q09",
+        "028-q11",
+        "028-q33"
+      ]
+    },
+    {
+      "id": "028-q11",
+      "course": "028",
+      "topic": "028-maps",
+      "type": "short",
+      "level": 2,
+      "prompt": {
+        "zh": "线性变换 $T(x,y,z)=(x+z,y-z)$ 的核的维数是多少？",
+        "en": "Find the dimension of the kernel of $T(x,y,z)=(x+z,y-z)$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "令输出为零，得到 $x=-z,y=z$。",
+              "en": "Set the output equal to zero to obtain $x=-z,y=z$."
+            },
+            {
+              "zh": "核由非零向量 $(-1,1,1)$ 张成，故维数为 1。",
+              "en": "The kernel is spanned by the nonzero vector $(-1,1,1)$ and has dimension 1."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "1"
+      ],
+      "related": [
+        "028-q09",
+        "028-q10",
+        "028-q33"
+      ]
+    },
+    {
+      "id": "028-q12",
+      "course": "028",
+      "topic": "028-matrices",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "若 $A$ 是 $3\\times2$，$B$ 是 $2\\times4$，则 $AB$ 的大小为？",
+        "en": "If $A$ is $3\\times2$ and $B$ is $2\\times4$, what is the size of $AB$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "内侧维数都是 2，因此乘积有定义。",
+              "en": "The inner dimensions agree at 2, so the product exists."
+            },
+            {
+              "zh": "外侧维数给出 3 行 4 列。",
+              "en": "The outer dimensions give three rows and four columns."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$2\\times2$",
+          "en": "$2\\times2$"
+        },
+        {
+          "id": "b",
+          "zh": "$3\\times4$",
+          "en": "$3\\times4$"
+        },
+        {
+          "id": "c",
+          "zh": "$4\\times3$",
+          "en": "$4\\times3$"
+        }
+      ],
+      "related": [
+        "028-q13",
+        "028-q14"
+      ]
+    },
+    {
+      "id": "028-q13",
+      "course": "028",
+      "topic": "028-matrices",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "求 $A=\\begin{bmatrix}3&1\\\\2&2\\end{bmatrix}$ 的逆矩阵。",
+        "en": "Find the inverse of $A=\\begin{bmatrix}3&1\\\\2&2\\end{bmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "行列式为 $3\\cdot2-1\\cdot2=4$。",
+              "en": "The determinant is $3\\cdot2-1\\cdot2=4$."
+            },
+            {
+              "zh": "交换主对角元、改变两个非对角元的符号，再除以 4，得 $A^{-1}=\\frac14\\begin{bmatrix}2&-1\\\\-2&3\\end{bmatrix}$。",
+              "en": "Swap the diagonal entries, negate the off-diagonal entries and divide by 4: $A^{-1}=\\frac14\\begin{bmatrix}2&-1\\\\-2&3\\end{bmatrix}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q12",
+        "028-q14"
+      ]
+    },
+    {
+      "id": "028-q14",
+      "course": "028",
+      "topic": "028-matrices",
+      "type": "true-false",
+      "level": 2,
+      "prompt": {
+        "zh": "若 $A,B$ 为同阶可逆方阵，则 $(AB)^{-1}=B^{-1}A^{-1}$。",
+        "en": "If $A,B$ are invertible matrices of the same size, then $(AB)^{-1}=B^{-1}A^{-1}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "计算 $(AB)(B^{-1}A^{-1})=AIA^{-1}=I$。",
+              "en": "Compute $(AB)(B^{-1}A^{-1})=AIA^{-1}=I$."
+            },
+            {
+              "zh": "反序相乘也得 $B^{-1}A^{-1}AB=B^{-1}IB=I$。",
+              "en": "In the other order, $B^{-1}A^{-1}AB=B^{-1}IB=I$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "true"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q12",
+        "028-q13"
+      ]
+    },
+    {
+      "id": "028-q15",
+      "course": "028",
+      "topic": "028-matrices",
+      "type": "short",
+      "level": 2,
+      "prompt": {
+        "zh": "哪个实数 $t$ 使 $\\begin{bmatrix}1&3\\\\2&t\\end{bmatrix}$ 不可逆？",
+        "en": "For which real $t$ is $\\begin{bmatrix}1&3\\\\2&t\\end{bmatrix}$ singular?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "第二行减去第一行的两倍，得到第二行 $[0,t-6]$。",
+              "en": "Subtract twice row one from row two, leaving $[0,t-6]$."
+            },
+            {
+              "zh": "方阵失去第二个主元恰在 $t=6$ 时。",
+              "en": "The square matrix loses its second pivot exactly when $t=6$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "6"
+      ],
+      "related": [
+        "028-q12",
+        "028-q13"
+      ]
+    },
+    {
+      "id": "028-q16",
+      "course": "028",
+      "topic": "028-spaces",
+      "type": "choice",
+      "level": 1,
+      "prompt": {
+        "zh": "以下哪个集合是 $\\mathbb R^2$ 的子空间？",
+        "en": "Which set is a subspace of $\\mathbb R^2$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "方程 $x=2y$ 的解可写成 $y(2,1)$，所以它是一个张成空间。",
+              "en": "Solutions to $x=2y$ are multiples of $(2,1)$, so they form a span."
+            },
+            {
+              "zh": "另外两个集合都不含零向量。",
+              "en": "The other two sets omit the zero vector."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$x+y=1$",
+          "en": "$x+y=1$"
+        },
+        {
+          "id": "b",
+          "zh": "$x=2y$",
+          "en": "$x=2y$"
+        },
+        {
+          "id": "c",
+          "zh": "$x>0$",
+          "en": "$x>0$"
+        }
+      ],
+      "related": [
+        "028-q17",
+        "028-q18"
+      ]
+    },
+    {
+      "id": "028-q17",
+      "course": "028",
+      "topic": "028-spaces",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "一个 $4\\times7$ 矩阵有 3 个主元，其零空间的维数是多少？",
+        "en": "A $4\\times7$ matrix has three pivots. What is its nullity?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "7 个未知量中有 3 个主元变量，故有 $7-3=4$ 个自由变量。",
+              "en": "Among the seven unknowns, three are pivot variables, leaving $7-3=4$ free variables."
+            },
+            {
+              "zh": "每个自由变量贡献一个零空间基向量。",
+              "en": "Each free variable contributes one vector to a null-space basis."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "4"
+      ],
+      "related": [
+        "028-q16",
+        "028-q18"
+      ]
+    },
+    {
+      "id": "028-q18",
+      "course": "028",
+      "topic": "028-spaces",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "求 $A=\\begin{bmatrix}1&2&0\\\\2&4&1\\\\0&0&1\\end{bmatrix}$ 的列空间和零空间各一组基。",
+        "en": "Give bases for the column space and null space of $A=\\begin{bmatrix}1&2&0\\\\2&4&1\\\\0&0&1\\end{bmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "第二列是第一列的两倍，第三列与第一列线性无关。所以列空间有基 $\\{(1,2,0),(0,1,1)\\}$。",
+              "en": "Column two is twice column one, while column three is independent of column one. A column-space basis is $\\{(1,2,0),(0,1,1)\\}$."
+            },
+            {
+              "zh": "由 $Ax=0$ 得 $x_3=0,x_1=-2x_2$，故零空间有基 $\\{(-2,1,0)\\}$。",
+              "en": "Solving $Ax=0$ gives $x_3=0,x_1=-2x_2$, so a null-space basis is $\\{(-2,1,0)\\}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q16",
+        "028-q17"
+      ]
+    },
+    {
+      "id": "028-q19",
+      "course": "028",
+      "topic": "028-spaces",
+      "type": "true-false",
+      "level": 2,
+      "prompt": {
+        "zh": "任意两个二维子空间只要同在 $\\mathbb R^3$ 中就必相等。",
+        "en": "Any two two-dimensional subspaces of $\\mathbb R^3$ must coincide."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "例如 $xy$ 平面和 $xz$ 平面都是二维子空间。",
+              "en": "The $xy$-plane and $xz$-plane both have dimension two."
+            },
+            {
+              "zh": "向量 $(0,1,0)$ 只在前一个平面内，所以两者不同。",
+              "en": "The vector $(0,1,0)$ lies only in the first, so the spaces differ."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q16",
+        "028-q17"
+      ]
+    },
+    {
+      "id": "028-q20",
+      "course": "028",
+      "topic": "028-dets",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "求 $\\begin{vmatrix}2&3\\\\-1&4\\end{vmatrix}$。",
+        "en": "Evaluate $\\begin{vmatrix}2&3\\\\-1&4\\end{vmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "用二阶行列式公式 $ad-bc$。",
+              "en": "Use the two-by-two formula $ad-bc$."
+            },
+            {
+              "zh": "代入得 $2\\cdot4-3(-1)=11$。",
+              "en": "It gives $2\\cdot4-3(-1)=11$."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "用行变换核对",
+            "en": "Check by row reduction"
+          },
+          "steps": [
+            {
+              "zh": "第二行加上第一行的一半，行列式保持不变，矩阵成为上三角形。",
+              "en": "Add half of row one to row two. This preserves the determinant and gives an upper triangular matrix."
+            },
+            {
+              "zh": "主对角元的乘积为 $2(4+\\frac{3}{2})=11$。",
+              "en": "The product on the diagonal is $2(4+\\frac{3}{2})=11$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "11"
+      ],
+      "related": [
+        "028-q21",
+        "028-q22"
+      ]
+    },
+    {
+      "id": "028-q21",
+      "course": "028",
+      "topic": "028-dets",
+      "type": "short",
+      "level": 2,
+      "prompt": {
+        "zh": "已知 $\\det A=-3$。交换两行，再将新矩阵的第一行乘以 4，求最终行列式。",
+        "en": "Given $\\det A=-3$, swap two rows, then multiply the new first row by 4. Find the final determinant."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "交换两行使行列式变号，得 3。",
+              "en": "A row swap reverses the sign, giving 3."
+            },
+            {
+              "zh": "将一行乘 4 使行列式乘 4，故结果为 12。",
+              "en": "Scaling one row by 4 multiplies the determinant by 4, giving 12."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "12"
+      ],
+      "related": [
+        "028-q20",
+        "028-q22"
+      ]
+    },
+    {
+      "id": "028-q22",
+      "course": "028",
+      "topic": "028-dets",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "用代数余子式展开求 $\\det\\begin{bmatrix}0&2&0\\\\1&4&3\\\\2&0&5\\end{bmatrix}$。",
+        "en": "Use cofactor expansion to find $\\det\\begin{bmatrix}0&2&0\\\\1&4&3\\\\2&0&5\\end{bmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "沿第一行展开，唯一非零项位于 $(1,2)$，符号为负。",
+              "en": "Expand along row one. The sole nonzero entry is at $(1,2)$ with negative cofactor sign."
+            },
+            {
+              "zh": "删去第一行第二列，得结果 $-2(1\\cdot5-3\\cdot2)=2$。",
+              "en": "Deleting its row and column gives $-2(1\\cdot5-3\\cdot2)=2$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q20",
+        "028-q21"
+      ]
+    },
+    {
+      "id": "028-q23",
+      "course": "028",
+      "topic": "028-dets",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "若 $A$ 为 $3\\times3$ 方阵且 $\\det A=2$，则 $\\det(2A^{-1})$ 为多少？",
+        "en": "If $A$ is $3\\times3$ with determinant 2, find $\\det(2A^{-1})$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "由乘积法则得 $\\det(A^{-1})=\\frac{1}{2}$。",
+              "en": "The product rule gives $\\det(A^{-1})=\\frac{1}{2}$."
+            },
+            {
+              "zh": "三行都乘 2，所以 $\\det(2A^{-1})=\\frac{2^3}{2}=4$。",
+              "en": "All three rows scale by 2, so $\\det(2A^{-1})=\\frac{2^3}{2}=4$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$1$",
+          "en": "$1$"
+        },
+        {
+          "id": "b",
+          "zh": "$2$",
+          "en": "$2$"
+        },
+        {
+          "id": "c",
+          "zh": "$4$",
+          "en": "$4$"
+        }
+      ],
+      "related": [
+        "028-q20",
+        "028-q21"
+      ]
+    },
+    {
+      "id": "028-q24",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "short",
+      "level": 1,
+      "prompt": {
+        "zh": "对 $A=\\begin{bmatrix}2&1\\\\0&3\\end{bmatrix}$，向量 $(1,1)$ 对应的特征值是多少？",
+        "en": "For $A=\\begin{bmatrix}2&1\\\\0&3\\end{bmatrix}$, which eigenvalue belongs to $(1,1)$?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "计算 $A(1,1)^T=(3,3)^T$。",
+              "en": "Compute $A(1,1)^T=(3,3)^T$."
+            },
+            {
+              "zh": "像向量等于原非零向量的 3 倍。",
+              "en": "The image is three times the original nonzero vector."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "3"
+      ],
+      "related": [
+        "028-q25",
+        "028-q26"
+      ]
+    },
+    {
+      "id": "028-q25",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "写出 $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$ 的特征方程，并求所有特征值。",
+        "en": "Find the characteristic equation and all eigenvalues of $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "计算 $\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=\\lambda^2-7\\lambda+10$。",
+              "en": "Compute $\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=\\lambda^2-7\\lambda+10$."
+            },
+            {
+              "zh": "解 $(\\lambda-2)(\\lambda-5)=0$，得 2 和 5。",
+              "en": "Solving $(\\lambda-2)(\\lambda-5)=0$ gives 2 and 5."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q24",
+        "028-q26"
+      ]
+    },
+    {
+      "id": "028-q26",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "written",
+      "level": 2,
+      "prompt": {
+        "zh": "对 $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$，求特征值 2 的特征空间的一组基。",
+        "en": "Give a basis for the eigenspace of $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$ corresponding to 2."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "解 $(A-2I)v=0$。两行均给出条件 $x+y=0$。",
+              "en": "Solve $(A-2I)v=0$. Both rows impose $x+y=0$."
+            },
+            {
+              "zh": "取 $y=-x$，则 $v=x(1,-1)$，故一组基为 $\\{(1,-1)\\}$。",
+              "en": "With $y=-x$, write $v=x(1,-1)$, giving the basis $\\{(1,-1)\\}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q24",
+        "028-q25",
+        "028-q34"
+      ]
+    },
+    {
+      "id": "028-q27",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "true-false",
+      "level": 2,
+      "prompt": {
+        "zh": "零向量是每个方阵对应特征值 0 的特征向量。",
+        "en": "The zero vector is an eigenvector of every square matrix for eigenvalue zero."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "特征向量按定义必须非零。",
+              "en": "An eigenvector is nonzero by definition."
+            },
+            {
+              "zh": "只有当 $Ax=0$ 有非零解时，0 才是 $A$ 的特征值。",
+              "en": "Zero is an eigenvalue of $A$ precisely when $Ax=0$ has a nonzero solution."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q24",
+        "028-q25",
+        "028-q34"
+      ]
+    },
+    {
+      "id": "028-q28",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "将 $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$ 对角化，给出 $P,D$ 并检验。",
+        "en": "Diagonalize $A=\\begin{bmatrix}4&2\\\\1&3\\end{bmatrix}$. Give $P,D$ and verify."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "由 $\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=(\\lambda-2)(\\lambda-5)$ 得特征值 2 和 5。直接相乘可验证 $A(1,-1)^T=2(1,-1)^T$，$A(2,1)^T=5(2,1)^T$。",
+              "en": "Factoring $\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=(\\lambda-2)(\\lambda-5)$ gives eigenvalues 2 and 5. Multiplication confirms $A(1,-1)^T=2(1,-1)^T$ and $A(2,1)^T=5(2,1)^T$."
+            },
+            {
+              "zh": "取 $P=\\begin{bmatrix}1&2\\\\-1&1\\end{bmatrix},D=\\operatorname{diag}(2,5)$。上述两个等式给出 $AP=PD$，而 $\\det P=3\\ne0$，故 $A=PDP^{-1}$。",
+              "en": "Set $P=\\begin{bmatrix}1&2\\\\-1&1\\end{bmatrix},D=\\operatorname{diag}(2,5)$. The two checks give $AP=PD$. Since $\\det P=3\\ne0$, this yields $A=PDP^{-1}$."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q29",
+        "028-q30"
+      ]
+    },
+    {
+      "id": "028-q29",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "true-false",
+      "level": 2,
+      "prompt": {
+        "zh": "任何仅有一个不同特征值的 $2\\times2$ 实矩阵都不能在实数域上对角化。",
+        "en": "Every real $2\\times2$ matrix with only one distinct eigenvalue fails to be diagonalizable over the reals."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "取 $A=3I$。它的唯一特征值是 3。",
+              "en": "Take $A=3I$, whose only eigenvalue is 3."
+            },
+            {
+              "zh": "两个标准基向量都是特征向量，因此 $A$ 已是对角矩阵。",
+              "en": "Both standard basis vectors are eigenvectors, and $A$ is already diagonal."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "false"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "zh": "正确",
+          "en": "True"
+        },
+        {
+          "id": "false",
+          "zh": "错误",
+          "en": "False"
+        }
+      ],
+      "related": [
+        "028-q28",
+        "028-q30"
+      ]
+    },
+    {
+      "id": "028-q30",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "written",
+      "level": 3,
+      "prompt": {
+        "zh": "判断 $J=\\begin{bmatrix}2&1\\\\0&2\\end{bmatrix}$ 能否对角化，并用特征空间维数说明。",
+        "en": "Decide whether $J=\\begin{bmatrix}2&1\\\\0&2\\end{bmatrix}$ is diagonalizable. Justify using eigenspace dimension."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "特征多项式为 $(\\lambda-2)^2$，故只有特征值 2。",
+              "en": "The characteristic polynomial is $(\\lambda-2)^2$, so 2 is the sole eigenvalue."
+            },
+            {
+              "zh": "由 $(J-2I)v=0$ 得 $y=0$，故特征空间只有一维，无法构造两个无关的特征向量。",
+              "en": "Solving $(J-2I)v=0$ gives $y=0$. The eigenspace is one-dimensional and cannot supply two independent eigenvectors."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "028-q28",
+        "028-q29",
+        "028-q35"
+      ]
+    },
+    {
+      "id": "028-q31",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "short",
+      "level": 3,
+      "prompt": {
+        "zh": "若 $A(1,0)^T=2(1,0)^T$ 且 $A(1,1)^T=3(1,1)^T$，求 $A^3(2,1)^T$ 的第一分量。",
+        "en": "Suppose $A(1,0)^T=2(1,0)^T$ and $A(1,1)^T=3(1,1)^T$. Find the first component of $A^3(2,1)^T$."
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "分解 $(2,1)=(1,0)+(1,1)$。",
+              "en": "Decompose $(2,1)=(1,0)+(1,1)$."
+            },
+            {
+              "zh": "分别乘以对应特征值的立方，得 $8(1,0)+27(1,1)=(35,27)$。",
+              "en": "Scale each part by its eigenvalue cubed: $8(1,0)+27(1,1)=(35,27)$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "35"
+      ],
+      "related": [
+        "028-q28",
+        "028-q29",
+        "028-q35"
+      ]
+    },
+    {
+      "id": "028-q32",
+      "course": "028",
+      "topic": "028-vectors",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "向量 $u,v$ 线性无关。对哪些实数 $t$，向量 $u+tv$ 与 $tu+v$ 线性相关？",
+        "en": "Let $u,v$ be independent. For which real $t$ are $u+tv$ and $tu+v$ dependent?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "设两向量的线性组合为零。按 $u,v$ 收集系数，得 $a+tb=0,\\ ta+b=0$。",
+              "en": "Set a linear combination equal to zero. Independence of $u,v$ gives $a+tb=0,\\ ta+b=0$."
+            },
+            {
+              "zh": "代入 $a=-tb$，得 $(1-t^2)b=0$。当 $t\\ne\\pm1$ 时必有 $a=b=0$；当 $t=1$ 时两向量相等，当 $t=-1$ 时它们互为相反向量。",
+              "en": "Substituting $a=-tb$ gives $(1-t^2)b=0$. When $t\\ne\\pm1$ both coefficients must vanish. At $t=1$ the vectors coincide, and at $t=-1$ they are negatives."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "仅 $t=0$",
+          "en": "Only $t=0$"
+        },
+        {
+          "id": "b",
+          "zh": "仅 $t=1$",
+          "en": "Only $t=1$"
+        },
+        {
+          "id": "c",
+          "zh": "$t\\in\\{-1,1\\}$",
+          "en": "$t\\in\\{-1,1\\}$"
+        },
+        {
+          "id": "d",
+          "zh": "所有实数",
+          "en": "Every real number"
+        }
+      ],
+      "related": [
+        "028-q07",
+        "028-q08"
+      ]
+    },
+    {
+      "id": "028-q33",
+      "course": "028",
+      "topic": "028-maps",
+      "type": "choice",
+      "level": 2,
+      "prompt": {
+        "zh": "图像坐标先经水平错切 $S(x,y)=(x+2y,y)$，再经交换坐标的变换 $R(x,y)=(y,x)$。哪个矩阵能一次完成这两步？",
+        "en": "A display shears coordinates by $S(x,y)=(x+2y,y)$, then swaps them using $R(x,y)=(y,x)$. Which single matrix implements both steps?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "按实际顺序，$R(S(x,y))=(y,x+2y)$。",
+              "en": "In the stated order, $R(S(x,y))=(y,x+2y)$."
+            },
+            {
+              "zh": "标准基向量的像分别为 $(0,1)$、$(1,2)$。将其作为列得 $\\begin{bmatrix}0&1\\\\1&2\\end{bmatrix}$。",
+              "en": "The images of the standard basis vectors are $(0,1)$ and $(1,2)$. These are the columns of $\\begin{bmatrix}0&1\\\\1&2\\end{bmatrix}$."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$\\begin{bmatrix}2&1\\\\1&0\\end{bmatrix}$",
+          "en": "$\\begin{bmatrix}2&1\\\\1&0\\end{bmatrix}$"
+        },
+        {
+          "id": "b",
+          "zh": "$\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$",
+          "en": "$\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$"
+        },
+        {
+          "id": "c",
+          "zh": "$\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$",
+          "en": "$\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$"
+        },
+        {
+          "id": "d",
+          "zh": "$\\begin{bmatrix}0&1\\\\1&2\\end{bmatrix}$",
+          "en": "$\\begin{bmatrix}0&1\\\\1&2\\end{bmatrix}$"
+        }
+      ],
+      "related": [
+        "028-q10",
+        "028-q11"
+      ]
+    },
+    {
+      "id": "028-q34",
+      "course": "028",
+      "topic": "028-eigen",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "某 $2\\times2$ 矩阵 $A$ 有特征值 $-2,3$。对 $B=A^2-A$，哪个说法正确？",
+        "en": "A $2\\times2$ matrix $A$ has eigenvalues $-2,3$. Which claim about $B=A^2-A$ is correct?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "若 $Av=\\lambda v$，则 $Bv=(\\lambda^2-\\lambda)v$。两个特征值都给出 $6$。",
+              "en": "If $Av=\\lambda v$, then $Bv=(\\lambda^2-\\lambda)v$. Both eigenvalues give $6$."
+            },
+            {
+              "zh": "不同特征值对应的特征向量线性无关，构成整个二维空间的一组基。$B$ 将这组基的每个向量乘以 6，因此对所有向量有 $Bx=6x$。",
+              "en": "Eigenvectors for the two distinct eigenvalues form a basis of the plane. Since $B$ multiplies each basis vector by 6, it acts as multiplication by 6 on every vector."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "a"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "$B=6I$",
+          "en": "$B=6I$"
+        },
+        {
+          "id": "b",
+          "zh": "$B$ 的特征值为 $4,9$",
+          "en": "$B$ has eigenvalues $4,9$"
+        },
+        {
+          "id": "c",
+          "zh": "$B$ 的零空间维数为 1",
+          "en": "$B$ has nullity one"
+        },
+        {
+          "id": "d",
+          "zh": "$B$ 只有一个线性无关的特征向量",
+          "en": "$B$ has only one independent eigenvector"
+        }
+      ],
+      "related": [
+        "028-q26",
+        "028-q27"
+      ]
+    },
+    {
+      "id": "028-q35",
+      "course": "028",
+      "topic": "028-diag",
+      "type": "choice",
+      "level": 3,
+      "prompt": {
+        "zh": "对于 $A_t=\\begin{bmatrix}2&t&1\\\\0&2&0\\\\0&0&5\\end{bmatrix}$，哪些实数 $t$ 使其可对角化？",
+        "en": "For which real $t$ is $A_t=\\begin{bmatrix}2&t&1\\\\0&2&0\\\\0&0&5\\end{bmatrix}$ diagonalizable?"
+      },
+      "solution": [
+        {
+          "title": {
+            "zh": "解答",
+            "en": "Solution"
+          },
+          "steps": [
+            {
+              "zh": "三角矩阵的特征值为 2（重数 2）和 5（重数 1）。解 $(A_t-2I)v=0$ 得 $z=0,\\ ty=0$，而 $x$ 自由。",
+              "en": "The triangular matrix has eigenvalues 2 (multiplicity two) and 5 (multiplicity one). Solving $(A_t-2I)v=0$ gives $z=0,\\ ty=0$, with $x$ free."
+            },
+            {
+              "zh": "当 $t=0$ 时，特征值 2 有二维特征空间，否则只有一维。特征值 5 的特征空间由 $(1,0,3)$ 张成。因此仅 $t=0$ 时有三个线性无关的特征向量。",
+              "en": "The eigenspace for 2 has dimension two if $t=0$ and one otherwise. The eigenspace for 5 is spanned by $(1,0,3)$. Thus only $t=0$ yields three independent eigenvectors."
+            }
+          ]
+        }
+      ],
+      "answers": [
+        "b"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "zh": "所有实数",
+          "en": "Every real number"
+        },
+        {
+          "id": "b",
+          "zh": "仅 $t=0$",
+          "en": "Only $t=0$"
+        },
+        {
+          "id": "c",
+          "zh": "所有 $t\\ne0$",
+          "en": "All $t\\ne0$"
+        },
+        {
+          "id": "d",
+          "zh": "无实数解",
+          "en": "No real value"
+        }
+      ],
+      "related": [
+        "028-q30",
+        "028-q31"
+      ]
+    }
+  ]
+}
